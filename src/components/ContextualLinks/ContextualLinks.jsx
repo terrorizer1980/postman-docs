@@ -3,7 +3,7 @@ import DynamicLink from '../Shared/DynamicLink';
 import './ContextualLinks.scss';
 
 const ContextualLinks = ({ links }) => (
-  <div className="contextual-links">
+  <div className="contextual-links ml-3 ml-lg-0">
     {
       links.map((item) => {
         if (item.type === 'link') {
