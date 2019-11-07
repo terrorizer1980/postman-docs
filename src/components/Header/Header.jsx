@@ -52,6 +52,7 @@ class Header extends React.Component {
       isToggledOn: 'unset',
       hasInput: false,
       refresh: false,
+      searchState: '',
     };
   }
 
@@ -89,6 +90,7 @@ class Header extends React.Component {
     const { isToggledOn } = this.state;
     const { refresh } = this.state;
     const { hasInput } = this.state;
+    // const { searchState } = this.state;
 
     return (
       <header className="header text-center navbar navbar-expand-xl navbar-light">
@@ -122,6 +124,11 @@ class Header extends React.Component {
                 searchClient={searchClient}
                 indexName="docs"
                 refresh={refresh}
+                // send search results to Google Analytics
+                onSearchStateChange={(searchState) => {
+                  const page = `?query=${searchState.query}`;
+                  window.ga('send', 'pageView', page);
+                }}
               >
                 <Configure hitsPerPage={5} />
 
