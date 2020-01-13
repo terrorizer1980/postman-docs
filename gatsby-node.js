@@ -4,9 +4,11 @@ const { createFilePath } = require('gatsby-source-filesystem');
 const glob = require('glob');
 const uuidv4 = require('uuid/v4');
 const frontmatter = require('@github-docs/frontmatter');
+const { execSync } = require('child_process');
 const redirects = require('./redirects');
 const HeaderJson = require('./src/components/Header/Header.data.json');
 const FooterJson = require('./src/components/Footer/Footer.data.json');
+
 
 const ignorePaths = [
   '/docs/postman-pro/api-search/searching-apis/',
@@ -17,6 +19,28 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === 'MarkdownRemark') {
     const slug = createFilePath({ node, getNode, basePath: 'pages' });
+    const commit = execSync(`git log -1 ./src/pages${slug.slice(0, -1)}.md`, { encoding: 'utf8' }).toString();
+    // console.log('commit', commit);
+
+    // look for author and Date and match all between
+    const author = commit.match(/Author:.*</g);
+    // console.log('/////////////author/////////', author);
+    // format date with moment.js
+    const date = commit.match(/Date:.*/g);
+    // console.log('/////////////date/////////', date);
+
+    createNodeField({
+      node,
+      name: 'author',
+      value: author,
+    });
+
+    createNodeField({
+      node,
+      name: 'date',
+      value: date,
+    });
+
     createNodeField({
       node,
       name: 'slug',
@@ -44,6 +68,8 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             fields {
               slug
+              author
+              date
             }
           }
         }
@@ -62,6 +88,8 @@ exports.createPages = async ({ graphql, actions }) => {
     });
     createPage({
       path: node.fields.slug,
+      author: node.fields.author,
+      date: node.fields.date,
       component: path.resolve('./src/templates/doc.jsx'),
       context: {
         slug: node.fields.slug,

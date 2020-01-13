@@ -7,6 +7,8 @@ import LeftNav from '../components/LeftNav/LeftNav';
 import SEO from '../components/seo';
 import './doc.scss';
 
+import LastUpdate from '../components/Shared/lastUpdated';
+
 export default ({ data }) => {
   const post = data.markdownRemark;
   let contextualLinks;
@@ -24,10 +26,11 @@ export default ({ data }) => {
           </div>
           <div className="col-sm-10 col-md-6 doc-page">
             <div className="text-right">
-            <EditDoc className={'btn btn__small btn__secondary-light'} />
+              <EditDoc className={'btn btn__small btn__secondary-light'} />
             </div>
             <h1>{post.frontmatter.title}</h1>
             <span dangerouslySetInnerHTML={{ __html: post.html }} />
+            <LastUpdate name={post.fields.author} date={post.fields.date} />
           </div>
           <div className="col-sm-3">
             {contextualLinks}
