@@ -1,18 +1,116 @@
-Log File - diff --git a/logFile.sh b/logFile.sh
-index b01383db..698593c3 100644
+ diff --git a/email.js b/email.js
+index eea3d9f0..9fa5c21e 100644
+--- a/email.js
++++ b/email.js
+@@ -10,6 +10,6 @@ sendmail({
+     },
+   ],
+ }, (err, reply) => {
+-  console.log(err && err.stack);
++  console.log('sendmail nodejs error', err && err.stack);
+   console.dir(reply);
+ });
+diff --git a/email.txt b/email.txt
+index 97c35ec4..f7260fff 100644
+--- a/email.txt
++++ b/email.txt
+@@ -1 +1,44 @@
+-13: result=$(grep -n '##' "$log")
++18:-13: result=$(grep -n '##' "$log")
++19:+18:-13: result=$(grep -n '##' "$log")
++20:+19:+18:-13: result=$(grep -n '##' "$log")
++21:+20:+19:+18:-13: result=$(grep -n '##' "$log")
++22:+21:+20:+19:+18:-13: result=$(grep -n '##' "$log")
++23:+22:+21:+20:+19:+18:-13: result=$(grep -n '##' "$log")
++24:+23:+22:+21:+20:+32: result=$(grep -n '##' "$log")
++25:+24:+23:+22:+21:+62:- result=$(grep -n '##' "$log")
++26:+25:+24:+23:+34: result=$(grep -n '##' "$log")
++27:+26:+25:+24:+64:- result=$(grep -n '##' "$log")
++28:+27:+26:+41: result=$(grep -n '##' "$log")
++29:+28:+27:+71:- result=$(grep -n '##' "$log")
++30:+29:+44: result=$(grep -n '##' "$log")
++31:+30:+74:- result=$(grep -n '##' "$log")
++32:+31:+97:-13: result=$(grep -n '##' "$log")
++33:+32:+98:+18:-13: result=$(grep -n '##' "$log")
++34:+33:+99:+19:+18:-13: result=$(grep -n '##' "$log")
++35:+34:+100:+20:+19:+18:-13: result=$(grep -n '##' "$log")
++36:+35:+101:+21:+20:+19:+18:-13: result=$(grep -n '##' "$log")
++37:+36:+102:+22:+21:+20:+32: result=$(grep -n '##' "$log")
++38:+37:+103:+23:+22:+21:+62:- result=$(grep -n '##' "$log")
++39:+38:+104:+24:+23:+34: result=$(grep -n '##' "$log")
++40:+39:+105:+25:+24:+64:- result=$(grep -n '##' "$log")
++41:+40:+106:+26:+41: result=$(grep -n '##' "$log")
++42:+41:+107:+27:+71:- result=$(grep -n '##' "$log")
++43:+42:+108:+44: result=$(grep -n '##' "$log")
++44:+43:+109:+74:- result=$(grep -n '##' "$log")
++45:+44:+126: result=$(grep -n '##' "$log")
++46:+45:+163:+-13: result=$(grep -n '##' "$log")
++47:+46:+164:++18:-13: result=$(grep -n '##' "$log")
++48:+47:+165:++19:+18:-13: result=$(grep -n '##' "$log")
++49:+48:+166:++20:+19:+18:-13: result=$(grep -n '##' "$log")
++50:+49:+167:++21:+20:+32: result=$(grep -n '##' "$log")
++51:+50:+168:++22:+21:+62:- result=$(grep -n '##' "$log")
++52:+51:+169:++23:+34: result=$(grep -n '##' "$log")
++53:+52:+170:++24:+64:- result=$(grep -n '##' "$log")
++54:+53:+171:++41: result=$(grep -n '##' "$log")
++55:+54:+172:++71:- result=$(grep -n '##' "$log")
++56:+55:+191:  result=$(grep -n '##' "$log")
++57:+56:+223:+- result=$(grep -n '##' "$log")
++58:+73: result=$(grep -n '##' "$log")
++59:+103:- result=$(grep -n '##' "$log")
++76: result=$(grep -n '##' "$log")
++106:- result=$(grep -n '##' "$log")
+diff --git a/logFile.sh b/logFile.sh
+index 2fc01d95..38ffaf87 100644
 --- a/logFile.sh
 +++ b/logFile.sh
-@@ -7,7 +7,7 @@ email=email.txt
- printf "Log File - " > $log
+@@ -4,20 +4,21 @@ log=log_file.txt
+ email=email.txt
+  
+ # create log file or overrite if already present
+-printf "Log File - " > $log
++printf " " > $log
   
  # append git diff to log file
 -git diff branch >> $log 
-+git diff >> $log 
++git diff develop >> $log 
  
  # find H2 tag in diff
  result=$(grep -n '##' "$log")
-@@ -21,3 +21,4 @@ size=${#result}
+ size=${#result}
++  echo "$size"
+   if [ $size > 0 ]
+   then
+     # append data to email
+     printf '%s\n' "${result[@]}" > $email
+     # send mail to email address
+-    node email.js
++    # node email.js
    else
      echo no data
    fi
-+echo end of file
+diff --git a/log_file.txt b/log_file.txt
+index 34f76c89..0519ecba 100644
+--- a/log_file.txt
++++ b/log_file.txt
+@@ -1,18 +1 @@
+-Log File - diff --git a/logFile.sh b/logFile.sh
+-index b01383db..698593c3 100644
+---- a/logFile.sh
+-+++ b/logFile.sh
+-@@ -7,7 +7,7 @@ email=email.txt
+- printf "Log File - " > $log
+-  
+- # append git diff to log file
+--git diff branch >> $log 
+-+git diff >> $log 
+- 
+- # find H2 tag in diff
+- result=$(grep -n '##' "$log")
+-@@ -21,3 +21,4 @@ size=${#result}
+-   else
+-     echo no data
+-   fi
+-+echo end of file
++ 
+\ No newline at end of file
