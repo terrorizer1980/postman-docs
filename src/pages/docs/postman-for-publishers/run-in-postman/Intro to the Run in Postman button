@@ -1,13 +1,13 @@
+---
+title: "Introduction to the Run in Postman button"
+order: 331
+page_id: "creating_run_button"
+warning: false
+contextual_links:
 
+---
 
-
-
-
-
-
-# Introduction to the Run in Postman
-
-You can use the Run in Postman button to share your Postman collections outside of your workspace, and at any point in the API development lifecycle. Collaborate with teammates, onboard developers, and give people direct access to your API endpoints. Embed the button in your API documentation, website, or description format like GitHub to integrate your docs or developer portal with the Postman app. When developers or your teammates click the button, the collection that it's connected to, along with any shared environments, will open in the Postman app, and people can immediately start to work with your requests.
+The Run in Postman button is a way to give your teammates and developers working with your APIs direct access to your endpoints. When you create a button for you collections and then embed that button in your documentation, webiste, or GitHub repo, your collections will open in the Postman app any time a user clicks the button. Collaborate with teammates, onboard developers, and give people direct access to your API endpoints. Embed the button in your API documentation, website, or description format like GitHub to integrate your docs or developer portal with the Postman app. When developers or your teammates click the button, the collection that it's connected to, along with any shared environments, will open in the Postman app, and people can immediately start to work with your requests.
 
 > The Run in Postman button works with all description formats like Swagger, RAML, and GitHub.
 
@@ -21,7 +21,7 @@ There are 2 kinds of Run in Postman buttons:
 
 ## Use dynamic buttons to access the Run in Postman API
 
-When you use the Run in Postman button to share collections, you can also include environments with the button. [Environments]() are meant to help you keep your collections DRY. When you include environments with your Run in Postman buttons, they will open along with your collection in Postman. Your teammates and developers working with your APIs can leverage those environments to input and save their own variable values.
+When you use the Run in Postman button to share collections, you can also include [environments](/docs/postman/collection-runs/using-environments-in-collection-runs/). When developers click your Run in Postman button, the environment will open along with your collection in Postman, and they can leverage those environments to input and save their own variable values.
 
 With the dynamic button, you have access to the Run in Postman API, which is a series of JavaScript functions that you can use to create, delete, modify, and segregate environments. To change your button's behavior, you have to have permission to edit the source code of the website where the button is embedded. From there, you can write the functions in the button's script.
 
