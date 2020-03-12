@@ -4,29 +4,48 @@ order: 331
 page_id: "creating_run_button"
 warning: false
 contextual_links:
-
 ---
 
-The Run in Postman button is a way to give your teammates and developers working with your APIs direct access to your endpoints. When you create a button for your collections and then embed that button in your documentation, webiste, or GitHub repo, your collections will open in the Postman app any time a user clicks the button.
-
-> The Run in Postman button works with all description formats like Swagger, RAML, and GitHub.
+The Run in Postman button is a way to give developers working with your APIs direct access to your endpoints. When you [create a button](/docs/postman-for-publishers/run-in-postman/creating-run-button/) for your collections and then embed that button in your API documentation, webiste, or GitHub repo, your collections will open in the Postman app whenever a user clicks the button.
 
 ![Travefy](https://postman-static-assets.s3.amazonaws.com/postman-docs/RIP+intro_travefy+button.jpg)
 
+> The Run in Postman button works with all description formats like Swagger, RAML, and GitHub.
+
 ## The 2 types of Run in Postman buttons
 
-**Dynamic**: Uses HTML and CSS. Optimal for a website where you have permission to edit the site's source code.
+**Dynamic**: Uses HTML and CSS. Optimal for a website where you have permission to edit the site's source code. Gives you access to the [Run in Postman API](/docs/postman-for-publishers/run-in-postman/run-button-API/).
 
 **Static**: Uses Markdown. Optimal for a Markdown document like a GitHub ReadMe or BitBucket repository.
 
-## Use dynamic buttons to access the Run in Postman API
+##Include an environment
 
-The [Run in Postman API](/docs/postman-for-publishers/run-in-postman/run-button-API/) is accessible through the dynamic Run in Postman button. The API uses the `pm()`method, which you can leverage to create and modify ennvironments that you include with your button. When you include an environment with your button, it will open in the Postman app along with your collections whenever a user clicks your button. The user can then input their own [variable values in the environment](/docs/postman/variables-and-environments/variables/).
+You can [include and environment](/docs/postman-for-publishers/run-in-postman/environments-run-button/) with either type of button. The environment will open in the Postman app along with your collections whenever a user clicks your button. The user can then input their own [variable values in the environment](/docs/postman/variables-and-environments/variables/).
 
-When you use the Run in Postman button to share collections, you can also include [environments](/docs/postman/collection-runs/using-environments-in-collection-runs/). When developers click your Run in Postman button, the environment will open along with your collection in Postman, and the user can then leverage those environments to input and save their own variable values.
+## Use dynamic button to access the Run in Postman API
 
-With the dynamic button, you have access to the Run in Postman API, which is a series of JavaScript functions that you can use to create, delete, modify, and segregate environments. To change your button's behavior, you have to have permission to edit the source code of the website where the button is embedded. From there, you can write the functions in the button's script.
+The JavaScript [Run in Postman API](/docs/postman-for-publishers/run-in-postman/run-button-API/) is accessible through the dynamic Run in Postman button. The API uses the `pm()`method, which you can leverage to create and modify ennvironments included in your button. You can also include mulitple buttons on a single page with segregated environements, each with its own button.
 
-> The Run in Postman API only works with the dynamic Run in Postman button.
+The API consisits of 3 JavaScript functions that can alter your button's behavior:
 
-* `env.create` :
+* `env.create`: Creates a new environment.
+* `env.assign`: Edits an existing environment.
+* `env.replace`: Replaces and entire environment.
+
+## Developer experience with Run in Postman
+
+API publishers will display the Run in Postman button in the API reference and the API documentation.
+
+ [![example run in postman](https://assets.postman.com/postman-docs/59131401.png)](https://assets.postman.com/postman-docs/59131401.png)
+
+When they click the Run in Postman button, they will see some options to import the shared collection. The options will display in a modal if you implemented the button using JavaScript, or a new page if you implemented the button using a static image.
+
+ [![import options](https://assets.postman.com/postman-docs/run-btn-ux-2.png)](https://assets.postman.com/postman-docs/run-btn-ux-2.png)
+
+If the developer selects one of the first two options, either the Postman Chrome app or Postman native apps, the collection will be directly imported to their Postman app and bring the app into focus.
+
+ [![user has postman](https://assets.postman.com/postman-docs/run-btn-ux-3.png)](https://assets.postman.com/postman-docs/run-btn-ux-3.png)
+
+If the developer selects the third option, for people who do not yet have the Postman app, they will be directed to the web view to either download a file of the collection or get the Postman app. Nothing will happen if someone without the app clicks on either the Chrome app or Postman native app options.
+
+ [![user does not have postman](https://assets.postman.com/postman-docs/run-btn-ux-4.png)](https://assets.postman.com/postman-docs/run-btn-ux-4.png)
