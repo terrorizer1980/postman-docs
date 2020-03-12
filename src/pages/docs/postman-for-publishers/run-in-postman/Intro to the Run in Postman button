@@ -32,7 +32,7 @@ The API consisits of 3 JavaScript functions that can alter your button's behavio
 
 ## When users interact with your button
 
-When a user finds your button displayed on your website or GitHub ReadMe and they click it, they'll be prompted to open a copy of the collection in the Postman app. If they haven't downloaded the app yet, they'll be able to do so then.
+When a user finds your button displayed on your website or GitHub ReadMe and they click it, they'll be prompted to open a copy of the collection in the Postman app. If they haven't downloaded the app yet, they'll be prompted to do so then. 
 
  [![import options](https://postman-static-assets.s3.amazonaws.com/postman-docs/RIP+intro_travefy+button.jpg)
 
