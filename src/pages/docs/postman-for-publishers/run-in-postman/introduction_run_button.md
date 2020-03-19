@@ -1,7 +1,9 @@
 ---
 title: "Introduction to the Run in Postman button"
-order: 331
-page_id: "creating_run_button"
+order: 332
+page_id: "introduction_run_button"
+warning: false
+
 ---
 
 The Run in Postman button is a way to give users working with your APIs direct access to your endpoints. When you [create a button](/docs/postman-for-publishers/run-in-postman/creating-run-button/) for a colletion and then embed it in your API documentation, webiste, or GitHub repo, a copy of that collection will open in the Postman app whenever a user clicks the button.
@@ -16,7 +18,7 @@ The Run in Postman button is a way to give users working with your APIs direct a
 
 **Static**: Uses Markdown. Optimal for a Markdown document like a GitHub ReadMe or BitBucket repository.
 
-##Include an environment
+## Include an environment
 
 You can [include an environment](/docs/postman-for-publishers/run-in-postman/environments-run-button/) with either type of button. The environment will open in the Postman app along with a copy of your collection whenever a user clicks your button. The user can then input their own [variable values in the environment](/docs/postman/variables-and-environments/variables/).
 
@@ -45,7 +47,7 @@ The collection will import directly into their app and bring the app into focus.
 This section only covers security details related to the Run in Postman feature. Refer to our [complete security practices](https://www.postman.com/security) for general details.
 
 * Do a test import of your collection to be sure no sensitive data like access keys have been included. You can create a duplicate of your collection and remove any data you do not want shared. Duplicate your collection from ellipsis **(...)** menu next to your collection name.
-  - ![Duplication](https://postman-static-assets.s3.amazonaws.com/postman-docs/RIP+button_Duplicate+collection.jpg)
+    * ![Duplication](https://postman-static-assets.s3.amazonaws.com/postman-docs/RIP+button_Duplicate+collection.jpg)
 * Collections imported into the Postman app via the Run in Postman button are copies of the original.
 * Only collection-specific data you enter in Postman is shared through the Run in Postman button. **Example:** Collection names and descriptions, or the request data (URL, headers, body, tests, scripts, etc.).
 
