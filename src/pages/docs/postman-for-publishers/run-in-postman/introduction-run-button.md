@@ -20,7 +20,7 @@ There are 2 types of Run in Postman buttons:
 
 **Static button**: Uses Markdown. Optimal for a Markdown document like a GitHub ReadMe or BitBucket repository.
 
-You can [include an environment](/docs/postman-for-publishers/run-in-postman/environments-run-button/) with either type of button. The environment will open in the Postman app along with a copy of your collection whenever a user clicks your button. The user can then input their own [variable values in the environment](/docs/postman/variables-and-environments/variables/).
+With both buttons, you have the option to [include an environment](/docs/postman-for-publishers/run-in-postman/environments-run-button/). The environment will open in the Postman app along with a copy of your collection whenever a user clicks your button. The user can then input their own [variable values in the environment](/docs/postman/variables-and-environments/variables/).
 
 ## Use the dynamic button to access the Run in Postman API
 
