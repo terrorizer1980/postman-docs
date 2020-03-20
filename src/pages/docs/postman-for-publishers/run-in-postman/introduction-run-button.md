@@ -24,7 +24,7 @@ With both buttons, you have the option to [include an environment](/docs/postman
 
 ## Access to the Run in Postman API
 
-The JavaScript [Run in Postman API](/docs/postman-for-publishers/run-in-postman/run-button-API/) is accessible through the dynamic Run in Postman button. The API uses the `pm()`method, which you can leverage to create and modify environments included in your button. You can also include multiple buttons on a single page with segregated environments, each with its own button.
+The JavaScript [Run in Postman API](/docs/postman-for-publishers/run-in-postman/run-button-API/) is accessible through the dynamic Run in Postman button. The API uses the `pm()`method, which you can leverage to create and modify environments included in your button. You can also include multiple buttons on a single page with segregated environments, each button with its own button.
 
 The API consists of 3 JavaScript functions that can alter your button's behavior:
 
