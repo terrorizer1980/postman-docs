@@ -36,7 +36,7 @@ The API consists of 3 JavaScript functions that can alter your button's behavior
 
 When a user finds your button displayed on your website or GitHub ReadMe and they click it, they'll be prompted to open a copy of the collection in the Postman app. If they haven't downloaded the app yet, they'll be prompted to do so then.
 
- [![import options](https://postman-static-assets.s3.amazonaws.com/postman-docs/RIP+intro_travefy+button.jpg)
+ ![Modal display](https://assets.postman.com/postman-docs/New+sized+Modal+RIP+button.jpg)
 
 > If you used JavaScript to implement the button, the options will display in a modal. If you implemented the button with a static image, the options will open in a new page.
 
@@ -46,8 +46,8 @@ The collection will import directly into their app and bring the app into focus.
 
 This section only covers security details related to the Run in Postman feature. Refer to our [complete security practices](https://www.postman.com/security) for general details.
 
-* Do a test import of your collection to be sure no sensitive data like access keys have been included. You can create a duplicate of your collection and remove any data you do not want shared. Duplicate your collection from ellipsis **(...)** menu next to your collection name.
-    * ![Duplication](https://postman-static-assets.s3.amazonaws.com/postman-docs/RIP+button_Duplicate+collection.jpg)
+* Do a test import of your collection to be sure no sensitive data like access keys have been included. You can create a duplicate of your collection and remove any data you do not want shared. Duplicate your collection from the ellipsis **(...)** menu next to your collection name.
+    * ![Ellipsis menu](https://assets.postman.com/postman-docs/Resized+Ellipsis+menu+.jpg)
 * Collections imported into the Postman app via the Run in Postman button are copies of the original.
 * Only collection-specific data you enter in Postman is shared through the Run in Postman button. **Example:** Collection names and descriptions, or the request data (URL, headers, body, tests, scripts, etc.).
 
