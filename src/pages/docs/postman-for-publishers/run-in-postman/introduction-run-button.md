@@ -12,13 +12,13 @@ The Run in Postman button is a way to give users working with your APIs direct a
 
 > The Run in Postman button works with all description formats like Swagger, RAML, and GitHub.
 
-### There are 2 types of buttons
+## Button types & including an environment
 
-**Dynamic**: Uses HTML and CSS. Optimal for a website where you have permission to edit the site's source code. Gives you access to the [Run in Postman API](/docs/postman-for-publishers/run-in-postman/run-button-API/).
+There are 2 types of Run in Postman buttons:
 
-**Static**: Uses Markdown. Optimal for a Markdown document like a GitHub ReadMe or BitBucket repository.
+**Dynamic button**: Uses HTML and CSS. Optimal for a website where you have permission to edit the site's source code. Gives you access to the [Run in Postman API](/docs/postman-for-publishers/run-in-postman/run-button-API/).
 
-## Include an environment
+**Static button**: Uses Markdown. Optimal for a Markdown document like a GitHub ReadMe or BitBucket repository.
 
 You can [include an environment](/docs/postman-for-publishers/run-in-postman/environments-run-button/) with either type of button. The environment will open in the Postman app along with a copy of your collection whenever a user clicks your button. The user can then input their own [variable values in the environment](/docs/postman/variables-and-environments/variables/).
 
