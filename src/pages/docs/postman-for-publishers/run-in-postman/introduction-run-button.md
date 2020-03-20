@@ -20,7 +20,7 @@ There are 2 types of Run in Postman buttons:
 
 **Static button**: Uses Markdown. Optimal for a Markdown document like a GitHub ReadMe or BitBucket repository.
 
-With both buttons, you have the option to [include an environment](/docs/postman-for-publishers/run-in-postman/environments-run-button/). The environment will open in the Postman app along with a copy of your collection whenever a user clicks your button. The user can then input their own [variable values in the environment](/docs/postman/variables-and-environments/variables/).
+With both buttons you have the option to [include an environment](/docs/postman-for-publishers/run-in-postman/environments-run-button/). The environment will open in the Postman app along with a copy of your collection whenever a user clicks your button. The user can then input their own [variable values in the environment](/docs/postman/variables-and-environments/variables/).
 
 ## Access to the Run in Postman API
 
@@ -32,15 +32,15 @@ The API consists of 3 JavaScript functions that can alter your button's behavior
 * `env.assign`: Edits an existing environment.
 * `env.replace`: Replaces and entire environment.
 
-## When users interact with your button
+## User interaction with your button
 
-When a user finds your button displayed on your website or GitHub ReadMe and they click it, they'll be prompted to open a copy of the collection in the Postman app. If they haven't downloaded the app yet, they'll be prompted to do so then.
+When a user finds your button displayed on your website or GitHub ReadMe and they click it, they'll be prompted to open a copy of the collection in the Postman app. If they haven't downloaded the app yet, they'll have the option to do so then.
 
  ![Modal display](https://assets.postman.com/postman-docs/New+sized+Modal+RIP+button.jpg)
 
-> If you used JavaScript to implement the button, the options will display in a modal. If you implemented the button with a static image, the options will open in a new page.
+> If you're using the dynamic button, the prompt will display in a modal. If you're using the static button, the prompt will open in a new page.
 
-The collection will import directly into their app and bring the app into focus.
+The app will open on their desktop right to the imported copy of your collection.
 
 ## Security considerations
 
