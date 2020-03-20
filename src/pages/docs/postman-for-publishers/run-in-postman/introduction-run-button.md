@@ -40,13 +40,13 @@ When a user finds your button displayed on your website or GitHub ReadMe and the
 
 > If you're using the dynamic button, the prompt will display in a modal. If you're using the static button, the prompt will open in a new page.
 
-The app will open on their desktop right to the imported copy of your collection.
+The app will open on their desktop and automatically have your collection opened and ready for use.
 
 ## Security considerations
 
 This section only covers security details related to the Run in Postman feature. Refer to our [complete security practices](https://www.postman.com/security) for general details.
 
-* Do a test import of your collection to be sure no sensitive data like access keys have been included. You can create a duplicate of your collection and remove any data you do not want shared. Duplicate your collection from the ellipsis **(...)** menu next to your collection name.
+* Do a test import of your collection to be sure no sensitive data, like access keys, have been included. You can create a duplicate of your collection and remove any data you do not want shared. Duplicate your collection from the ellipsis **(...)** menu next to your collection name.
     * ![Ellipsis menu](https://assets.postman.com/postman-docs/Resized+Ellipsis+menu+.jpg)
 * Collections imported into the Postman app via the Run in Postman button are copies of the original.
 * Only collection-specific data you enter in Postman is shared through the Run in Postman button. **Example:** Collection names and descriptions, or the request data (URL, headers, body, tests, scripts, etc.).
