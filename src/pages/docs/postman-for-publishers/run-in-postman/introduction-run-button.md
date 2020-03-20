@@ -12,7 +12,7 @@ The Run in Postman button is a way to give users working with your APIs direct a
 
 > The Run in Postman button works with all description formats like Swagger, RAML, and GitHub.
 
-## The 2 types of Run in Postman buttons
+### There are 2 types of buttons
 
 **Dynamic**: Uses HTML and CSS. Optimal for a website where you have permission to edit the site's source code. Gives you access to the [Run in Postman API](/docs/postman-for-publishers/run-in-postman/run-button-API/).
 
