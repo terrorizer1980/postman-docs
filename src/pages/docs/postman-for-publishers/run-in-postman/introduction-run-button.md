@@ -8,7 +8,7 @@ warning: false
 
 The Run in Postman button is a way to give users working with your APIs direct access to your endpoints. When you [create a button](/docs/postman-for-publishers/run-in-postman/creating-run-button/) for a colletion and then embed it in your API documentation, webiste, or GitHub repo, a copy of that collection will open in the Postman app whenever a user clicks the button.
 
-![Travefy](https://postman-static-assets.s3.amazonaws.com/postman-docs/RIP+intro_travefy+button.jpg)
+![Travefy button](https://assets.postman.com/postman-docs/Travefy+API+RIP+button.jpg)
 
 > The Run in Postman button works with all description formats like Swagger, RAML, and GitHub.
 
