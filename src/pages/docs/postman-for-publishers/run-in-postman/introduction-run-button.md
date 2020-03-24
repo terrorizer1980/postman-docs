@@ -1,5 +1,5 @@
 ---
-title: "Introduction to the Run in Postman button"
+title: "The Run in Postman button"
 order: 332
 page_id: "introduction_run_button"
 warning: false
