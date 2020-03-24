@@ -3,6 +3,19 @@ title: "The Run in Postman button"
 order: 330.9
 page_id: "introduction_run_button"
 warning: false
+contextual_links:
+  - type: link
+    name: "Creating the Run in Postman button"
+    url: "https://learning.postman.com/docs/postman-for-publishers/run-in-postman/creating-run-button/"
+  - type: link
+    name: "Run in Postman button API"
+    url:  "https://learning.postman.com/docs/postman-for-publishers/run-in-postman/run-button-API/"
+  - type: link
+    name: "Environments in Run in Postman"
+    url: "https://learning.postman.com/docs/postman-for-publishers/run-in-postman/environments-run-button/"
+  - type: link
+    name: "Using variables"
+    url:  "https://learning.postman.com/docs/postman/variables-and-environments/variables/"
 
 ---
 
