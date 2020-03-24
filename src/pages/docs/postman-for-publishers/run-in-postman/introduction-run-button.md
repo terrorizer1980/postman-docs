@@ -58,9 +58,9 @@ The API consists of a series of JavaScript functions that can alter your button'
 
 When a user finds your button displayed on your website they click it, they'll be prompted to open the Postman app. If they haven't downloaded the app yet, they'll have the option to do so then.
 
- ![Modal display](https://assets.postman.com/postman-docs/New+sized+Modal+RIP+button.jpg)
+ ![Modal display](https://assets.postman.com/postman-docs/Modal+new+size+quality.jpg)
 
-> If you're using the dynamic button, the prompt will display in a modal. If you're using the static button, the prompt will open in a new page.
+> If you're using the dynamic button, the prompt will display in a modal, like the screenshot above. (The modal above is specific to Macs.) If you're using the static button, the prompt will open in a new page.
 
 The app will open on their desktop and automatically have your collection opened and ready for use.
 
