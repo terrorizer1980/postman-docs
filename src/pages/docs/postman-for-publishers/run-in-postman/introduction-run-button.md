@@ -60,7 +60,7 @@ When a user finds your button displayed on your website they click it, they'll b
 
  ![Modal display](https://assets.postman.com/postman-docs/Modal+new+size+quality.jpg)
 
-> If you're using the dynamic button, the prompt will display in a modal, like the screenshot above. (The modal above is specific to Macs.) If you're using the static button, the prompt will open in a new page.
+> If the button is dynamic, the prompts will open for the user in a modal, like the screenshot above. (The modal above is specific to Macs.) If the button is static, the prompts will open for the user in a new page.
 
 The app will open on their desktop and automatically have your collection opened and ready for use.
 
