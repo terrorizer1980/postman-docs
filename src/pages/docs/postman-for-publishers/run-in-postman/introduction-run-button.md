@@ -46,9 +46,9 @@ With both buttons you have the option to [include an environment](/docs/postman-
 
 ## Accessing the Run in Postman API
 
-The JavaScript [Run in Postman API](/docs/postman-for-publishers/run-in-postman/run-button-API/) is accessible through the dynamic Run in Postman button. The API uses the `pm()`method, which you can leverage to create and modify environments included in your button. You can also include multiple buttons on a single page with segregated environments, each environment with its own button.
+You can access the JavaScript [Run in Postman API](/docs/postman-for-publishers/run-in-postman/run-button-API/) through the dynamic Run in Postman button. Use the API to create and modify environments included in your button. You can also include multiple buttons on a single page with segregated environments, each environment with its own button.
 
-The API consists of 3 JavaScript functions that can alter your button's behavior:
+The API consists of a series of JavaScript functions that can alter your button's behavior:
 
 * `env.create`: Creates a new environment.
 * `env.assign`: Edits an existing environment.
@@ -56,7 +56,7 @@ The API consists of 3 JavaScript functions that can alter your button's behavior
 
 ## User interaction with your button
 
-When a user finds your button displayed on your website or GitHub ReadMe and they click it, they'll be prompted to open a copy of the collection in the Postman app. If they haven't downloaded the app yet, they'll have the option to do so then.
+When a user finds your button displayed on your website they click it, they'll be prompted to open the Postman app. If they haven't downloaded the app yet, they'll have the option to do so then.
 
  ![Modal display](https://assets.postman.com/postman-docs/New+sized+Modal+RIP+button.jpg)
 
