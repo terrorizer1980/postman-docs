@@ -32,7 +32,7 @@ The Run in Postman button is a way to give users working with your APIs direct a
 
 ![Travefy button](https://assets.postman.com/postman-docs/Travefy+API+RIP+button.jpg)
 
-> The Run in Postman button works with all description formats like Swagger, RAML, and GitHub.
+> The Run in Postman button works with description formats like Swagger, RAML, and GitHub.
 
 ## Button types & including an environment
 
