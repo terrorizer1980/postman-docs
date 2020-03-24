@@ -62,7 +62,7 @@ When a user finds your button displayed on your website they click it, they'll b
 
 > If the button is dynamic, the prompts will open for the user in a modal, like the screenshot above. (The modal above is specific to Macs.) If the button is static, the prompts will open for the user in a new page.
 
-The app will open on their desktop and automatically have your collection opened and ready for use.
+The app will open on the user's desktop and automatically have your collection opened and ready for use.
 
 ## Security considerations
 
