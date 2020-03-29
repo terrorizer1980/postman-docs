@@ -34,7 +34,7 @@ The Run in Postman button is a way to give users working with your APIs direct a
 
 > The Run in Postman button works with description formats like Swagger, RAML, and GitHub.
 
-## Dynamic & Static buttons with environments
+## Dynamic and Static buttons with environments
 
 There are two types of Run in Postman buttons:
 
