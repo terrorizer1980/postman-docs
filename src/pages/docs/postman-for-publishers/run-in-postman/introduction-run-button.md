@@ -24,6 +24,21 @@ contextual_links:
     - type: link
       name: "Using variables"
       url: "/docs/postman/variables-and-environments/variables/"
+    - type: section
+      name: "Accessing the Run in Postman API"
+    - type: link
+      name: "Run in Postman button API"
+      url: "/docs/postman-for-publishers/run-in-postman/run-button-API/"
+    - type: section
+      name: "Security considerations"
+    - type: link
+      name: "Security at Postman"
+      url: "https://www.postman.com/security"
+    - type: section
+      name: "next steps"
+    - type: link
+      name: "Creating the Run in Postman button"
+      url: "/docs/postman-for-publishers/run-in-postman/creating-run-button/"
 
 ---
 
