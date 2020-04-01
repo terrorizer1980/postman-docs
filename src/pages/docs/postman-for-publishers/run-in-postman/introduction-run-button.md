@@ -4,27 +4,16 @@ order: 330.9
 page_id: "introduction_run_button"
 warning: false
 contextual_links:
-  - type: link
-    name: "Creating the Run in Postman button"
-    url: "https://learning.postman.com/docs/postman-for-publishers/run-in-postman/creating-run-button/"
-  - type: link
-    name: "Run in Postman button API"
-    url:  "https://learning.postman.com/docs/postman-for-publishers/run-in-postman/run-button-API/"
-  - type: link
-    name: "Environments in Run in Postman"
-    url: "https://learning.postman.com/docs/postman-for-publishers/run-in-postman/environments-run-button/"
-  - type: link
-    name: "Using variables"
-    url:  "https://learning.postman.com/docs/postman/variables-and-environments/variables/"
-  - type: link
-    name: "Run in Postman button API"
-    url: "https://learning.postman.com/docs/postman-for-publishers/run-in-postman/run-button-API/"
-  - type: link
-    name: "Security at Postman"
-    url: "https://www.postman.com/security"
-  - type: link
-    name: "Creating the Run in Postman button"
-    url: "https://learning.postman.com/docs/postman-for-publishers/run-in-postman/creating-run-button/"
+    - type: section
+      name: "Intro"
+    - type: link
+      name: "Creating the Run in Postman button"
+      url: "/docs/postman-for-publishers/run-in-postman/creating-run-button/"
+    - type: section
+      name: "Dynamic and Static button with environments"
+    - type: link
+      name: "Run in Postman API"
+      url: "/docs/postman-for-publishers/run-in-postman/run-button-API/"
 
 ---
 
@@ -58,11 +47,11 @@ The API consists of a series of JavaScript functions that can alter your button'
 
 When a user finds your button displayed on your website they click it, they'll be prompted to open the Postman app. If they haven't downloaded the app yet, they'll have the option to do so then.
 
- ![Modal display](https://assets.postman.com/postman-docs/Modal+new+size+quality.jpg)
+ ![Modal display](https://assets.postman.com/postman-docs/Unsized+modal+image.jpg)
 
 > If the button is dynamic, the prompts will open for the user in a modal, like the screenshot above. (The modal above is specific to Macs.) If the button is static, the prompts will open for the user in a new page.
 
-The app will open on the user's desktop and automatically have your collection opened and ready for use.
+A copy of your collection will be imported into the user's app, and the app will open on the user's desktop.
 
 ## Security considerations
 
