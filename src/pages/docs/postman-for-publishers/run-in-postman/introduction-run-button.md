@@ -19,6 +19,11 @@ contextual_links:
     - type: link
       name: "Environments in Run in Postman"
       url: "/docs/postman-for-publishers/run-in-postman/environments-run-button/"
+    - type: section
+      name: "Dynamic and Static buttons with environments"
+    - type: link
+      name: "Using variables"
+      url: "/docs/postman/variables-and-environments/variables/"
 
 ---
 
