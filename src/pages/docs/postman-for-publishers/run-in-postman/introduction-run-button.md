@@ -12,8 +12,13 @@ contextual_links:
     - type: section
       name: "Dynamic and Static button with environments"
     - type: link
-      name: "Run in Postman API"
+      name: "Run in Postman button API"
       url: "/docs/postman-for-publishers/run-in-postman/run-button-API/"
+    - type: section
+      name: "Dynamic and Static buttons with environments"
+    - type: link
+      name: "Environments in Run in Postman"
+      url: "/docs/postman-for-publishers/run-in-postman/environments-run-button/"
 
 ---
 
