@@ -35,7 +35,7 @@ contextual_links:
       name: "Security at Postman"
       url: "https://www.postman.com/security"
     - type: section
-      name: "next steps"
+      name: "Next steps"
     - type: link
       name: "Creating the Run in Postman button"
       url: "/docs/postman-for-publishers/run-in-postman/creating-run-button/"
