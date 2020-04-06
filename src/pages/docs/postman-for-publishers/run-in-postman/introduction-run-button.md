@@ -5,25 +5,20 @@ page_id: "introduction_run_button"
 warning: false
 contextual_links:
     - type: section
-      name: "Intro"
+      name: "Prerequisites"
     - type: link
-      name: "Creating the Run in Postman button"
-      url: "/docs/postman-for-publishers/run-in-postman/creating-run-button/"
+      name: "Collections"
+      url: "/docs/postman/collections/intro-to-collections/"
     - type: section
-      name: "Dynamic and Static button with environments"
+      name: "Additional resources"
+      type: subtitle
+      name: "Videos"
+      type: link
+      name: "How to share Postman collections"
+      url: "https://www.youtube.com/watch?v=mVTsK6ZdY6c"
     - type: link
-      name: "Run in Postman button API"
-      url: "/docs/postman-for-publishers/run-in-postman/run-button-API/"
-    - type: section
-      name: "Dynamic and Static buttons with environments"
-    - type: link
-      name: "Environments in Run in Postman"
-      url: "/docs/postman-for-publishers/run-in-postman/environments-run-button/"
-    - type: section
-      name: "Dynamic and Static buttons with environments"
-    - type: link
-      name: "Using variables"
-      url: "/docs/postman/variables-and-environments/variables/"
+      name: "WTD: Postman for API development and docs"
+      url: "https://podcast.writethedocs.org/2018/01/22/postman-for-api-docs-write-the-docs/"
     - type: section
       name: "Accessing the Run in Postman API"
     - type: link
