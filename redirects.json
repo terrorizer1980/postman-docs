@@ -563,5 +563,13 @@
 
       "from": "/docs/postman-for-publishers/run-in-postman/using-run-button/",
       "to": "/docs/postman-for-publishers/run-in-postman/introduction-run-button/"
+    },
+    {
+        "from": "/docs/postman-for-publishers/run-in-postman/security/",
+        "to": "/docs/postman-for-publishers/run-in-postman/introduction-run-button/"
+    },
+    {
+        "from": "/docs/postman-for-publishers/run-in-postman/collections-run-button/",
+        "to": "/docs/postman-for-publishers/run-in-postman/introduction-run-button/"
     }
 ]
