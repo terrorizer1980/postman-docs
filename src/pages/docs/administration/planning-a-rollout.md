@@ -35,31 +35,45 @@ Having a rollout strategy ensures a smooth deployment of Postman in your organiz
 
 ### Promote the Benefits
 
-* Postman serves as a cloud based Repository for all of your API development, testing, and documentation. This repository serves as a single point of truth for your APIs and shifts source control from individual users to the team workspace.
+Postman provides many collaborative features designed to improve the efficiency of API delevopment. Odds are that your team has experienced challenges at some time or another and could benefit from one or more of these features.
 
-* Your API documentation is generated from your collections and is easy to maintain from within the Postman Application.
+* #### Source Control
 
-* Team workspaces allow your team to collaborate on a single source. This means collections are easier to find. Documentation is generated from the collection which keeps it up to date. Documentation features code samples and allows for the collection to be easily imported into the Postman application. All of these things add up to faster developer onboarding!
+  Postman serves as a cloud based Repository for all of your API development, testing, and documentation. This repository serves as a single point of truth for your APIs and shifts source control from individual users to the team workspace.
 
-* When the API is the first and primary interface for your application in design or coding, we call this __API-First__. An API-First approach reduces redundant interfaces, reduces the overall complexity of an application or system; therefore reducing the effort to maintain it.
+* #### Documentation
+
+  Postman closes the gap between development and documentation by generating documentation straight from your collections. This makes documentation simple to maintain and with less overhead.
+
+* #### Developer Onboarding
+
+  Team workspaces allow your team to collaborate on a single source. This means collections are easier to find. Documentation is generated from the collection which keeps it up to date. Documentation features code samples and allows for the collection to be easily imported into the Postman application. All of these things add up to faster developer onboarding!
+
+* #### API-First Principles
+
+  When the API is the first and primary interface for your application in design or coding, we call this __API-First__. An API-First approach reduces redundant interfaces, reduces the overall complexity of an application or system; therefore reducing the effort to maintain it.
 
 ### Organize your Workspaces
 
-* Establish the importance of Workspace Organization, Naming Conventions & Roles
+It is important that everyone on your team can find things quickly and easily. Formalizing a standard naming convention for your team's workspaces and collections ensures everyone has a common language to use for your projects.
 
-* Most teams organize their workspaces based organizational structure or on lines of business. However you decide to organize your collections make sure they are easy to navigate to.
-
-* 
+Most teams organize their workspaces based organizational structure or on lines of business. The goal should be to strike a balance between the number of workspaces and the number of collections in each workspace.
 
 ### Internal Wiki Page
 
-- Assist in user onboarding
-- Standards and documentation
-- Support flow
-- Catalog training and support resources
+An internal wiki is knowledge resource for standards, processes, projects, or products your team is building. Internal wikis are an affective tool in improving developer onboarding. Including information about your Postman team and workspaces allows new members of your team to find answers on their own.
+
+* List to your workspaces
+* List your team and workspace admins
+* Provide documentation on how to use Postman
+* clarify your naming conventions and method of organization
+* Provide your support process and links to Postman support resources
+
+We have developed a template to give you a leg up in the process of developing your internal wiki page. 
 
 ### Schedule Tech Talks
 
+Tech talks are an opportunity to share knowledge and exchange ideas.
 - Plan to schedule tech talks at least once a year.
 
 ### Create a Communications Channel
@@ -70,6 +84,8 @@ Having a rollout strategy ensures a smooth deployment of Postman in your organiz
 - Gain insight in how the braoder team is using the platform.
 
 ### Appoint a Project Leader
+
+Blurb about why you need a project leader
 
 A good project leader is someone who works with the team every day. Preferrably someone who can effect policy and mandate training.
 
