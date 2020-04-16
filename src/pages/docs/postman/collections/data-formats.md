@@ -19,19 +19,19 @@ contextual_links:
     name: "Related Blog Posts"
   - type: link
     name: "Sync your specs"
-    url: "https://blog.postman.com/2018/03/02/sync-your-specs/"
+    url: "https://blog.postman.com/sync-your-specs/"
   - type: link
     name: "Importing SoapUI projects into Postman"
-    url: "https://blog.postman.com/2016/04/27/importing-soapui-projects-into-postman/"
+    url: "https://blog.postman.com/importing-soapui-projects-into-postman/"
   - type: link
     name: "Importing RAML folders into Postman"
-    url: "https://blog.postman.com/2015/11/04/supporting-raml-folders-in-postman/"
+    url: "https://blog.postman.com/supporting-raml-folders-in-postman/"
   - type: link
     name: "Introducing Postman Collection Format Schema"
-    url: "https://blog.postman.com/2015/07/02/introducing-postman-collection-format-schema/"
+    url: "https://blog.postman.com/introducing-postman-collection-format-schema/"
   - type: link
     name: "Travelogue of Postman Collections Format v2"
-    url: "https://blog.postman.com/2015/06/05/travelogue-of-postman-collection-format-v2/"
+    url: "https://blog.postman.com/travelogue-of-postman-collection-format-v2/"
   - type: section
     name: "Next Steps"
   - type: link
@@ -63,7 +63,7 @@ Postman can export and import the following formats as a file or generated URL.Â
 
 [![export collection](https://assets.postman.com/postman-docs/WS-collections-view.png)](https://assets.postman.com/postman-docs/WS-collections-view.png)
 
-Postman can export collections in two formats - v1 and v2. Both Collection v1 and v2 download as JSON files; v2 is more versatile and the most-used choice. Learn more about the [v1 and v2 formats](https://blog.postman.com/2015/06/05/travelogue-of-postman-collection-format-v2/).
+Postman can export collections in two formats - v1 and v2. Both Collection v1 and v2 download as JSON files; v2 is more versatile and the most-used choice. Learn more about the [v1 and v2 formats](https://blog.postman.com/travelogue-of-postman-collection-format-v2/).
 
 [![select v1 or v2 format](https://assets.postman.com/postman-docs/WS-export-collection1.png)](https://assets.postman.com/postman-docs/WS-export-collection1.png)
 
@@ -189,4 +189,4 @@ To validate if a JSON file is in the correct collections format, you can use [sc
 - [Schema file](https://schema.getpostman.com/json/collection/v1.0.0/collection.json)
 - [Associated documentation](https://schema.getpostman.com/)
 - [Postman schemas in GitHub](https://github.com/postmanlabs/schemas)
-- [Example of data validation using a schema](https://blog.postman.com/2015/07/02/introducing-postman-collection-format-schema/) and a [validator](https://github.com/mafintosh/is-my-json-valid)
+- [Example of data validation using a schema](https://blog.postman.com/introducing-postman-collection-format-schema/) and a [validator](https://github.com/mafintosh/is-my-json-valid)

@@ -15,13 +15,13 @@ contextual_links:
     name: "Related Blog Posts"
   - type: link
     name: "Postman v7.2 Supports GraphQL"
-    url: "https://blog.postman.com/2019/06/18/postman-v7-2-supports-graphql/"
+    url: "https://blog.postman.com/postman-v7-2-supports-graphql/"
   - type: link
     name: "Introducing Interceptor Integration for Native Postman Apps (v7.2)"
-    url: "https://blog.postman.com/2019/06/24/introducing-interceptor-integration-for-native-postman-apps/"
+    url: "https://blog.postman.com/introducing-interceptor-integration-for-native-postman-apps/"
   - type: link
     name: "Postman 7.1: Create APIs directly within the Postman App"
-    url: "https://blog.postman.com/2019/05/17/postman-7-1-create-apis-directly-within-the-postman-app/"
+    url: "https://blog.postman.com/postman-7-1-create-apis-directly-within-the-postman-app/"
   - type: section
     name: "Next Steps"
   - type: link

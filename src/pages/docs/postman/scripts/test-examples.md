@@ -34,10 +34,10 @@ contextual_links:
     name: "Related Blog Posts"
   - type: link
     name: "Building and testing APIs with LoopBack and Postman"
-    url: "https://blog.postman.com/2018/01/12/building-and-testing-apis-with-loopback-and-postman/"
+    url: "https://blog.postman.com/building-and-testing-apis-with-loopback-and-postman/"
   - type: link
     name: "Writing a behavior driven API testing environment with Postman"
-    url: "https://blog.postman.com/2015/09/29/writing-a-behaviour-driven-api-testing-environment-within-postman/"
+    url: "https://blog.postman.com/writing-a-behaviour-driven-api-testing-environment-within-postman/"
   - type: section
     name: "Next Steps"
   - type: link

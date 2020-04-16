@@ -15,10 +15,10 @@ contextual_links:
     name: "Related Blog Posts"
   - type: link
     name: "Create APIs directly within the Postman app"
-    url: "https://blog.postman.com/2019/05/17/postman-7-1-create-apis-directly-within-the-postman-app/"
+    url: "https://blog.postman.com/postman-7-1-create-apis-directly-within-the-postman-app/"
   - type: link
     name: "What does “Max # of APIs” mean in Postman?"
-    url: "https://blog.postman.com/2020/01/24/what-does-max-of-apis-mean-in-postman/"
+    url: "https://blog.postman.com/what-does-max-of-apis-mean-in-postman/"
   - type: section
     name: "Next Steps"
   - type: link

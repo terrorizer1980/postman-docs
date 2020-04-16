@@ -14,7 +14,7 @@ contextual_links:
     name: "Related Blog Posts"
   - type: link
     name: "Generate Spotify Playlists using a Postman Collection"
-    url: "https://blog.postman.com/2016/11/09/generate-spotify-playlists-using-a-postman-collection/"
+    url: "https://blog.postman.com/generate-spotify-playlists-using-a-postman-collection/"
 
 warning: false
 ---

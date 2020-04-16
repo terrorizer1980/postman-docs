@@ -28,7 +28,7 @@ contextual_links:
     name: "Related Blog Posts"
   - type: link
     name: "Announcing the Postman API Network"
-    url: "https://blog.postman.com/2017/12/15/announcing-the-postman-api-network/"
+    url: "https://blog.postman.com/announcing-the-postman-api-network/"
   - type: section
     name: "Next Steps"
   - type: link

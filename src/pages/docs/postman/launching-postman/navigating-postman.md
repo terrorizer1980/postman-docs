@@ -19,13 +19,13 @@ contextual_links:
     name: "Related Blog Posts"
   - type: link
     name: "Speeding up workflows with keyboard shortcuts"
-    url: "https://blog.postman.com/2017/05/03/speeding-up-workflows-with-keyboard-shortcuts/"
+    url: "https://blog.postman.com/speeding-up-workflows-with-keyboard-shortcuts/"
   - type: link
     name: "The Postman status bar puts your favorite features at your fingertips"
-    url: "https://blog.postman.com/2017/09/08/the-postman-status-bar-puts-your-favorite-features-at-your-fingertips/"
+    url: "https://blog.postman.com/the-postman-status-bar-puts-your-favorite-features-at-your-fingertips/"
   - type: link
     name: "Introducing the New Data Editor"
-    url: "https://blog.postman.com/2017/02/28/introducing-the-new-data-editor/"
+    url: "https://blog.postman.com/introducing-the-new-data-editor/"
   
   - type: section
     name: "Next Steps"

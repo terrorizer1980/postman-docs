@@ -14,7 +14,7 @@ contextual_links:
     name: "Related Blog Posts"
   - type: link
     name: "The Postman Console"
-    url: "https://blog.postman.com/2016/08/26/the-postman-console/"
+    url: "https://blog.postman.com/the-postman-console/"
   - type: subtitle
     name: "Videos"
   - type: link

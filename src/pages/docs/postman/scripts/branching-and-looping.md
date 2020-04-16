@@ -23,13 +23,13 @@ contextual_links:
     name: "Related Blog Posts"
   - type: link
     name: "How to make money using Postman: chaining requests"
-    url: "https://blog.postman.com/2018/03/19/how-to-make-money-using-postman-chaining-requests/"
+    url: "https://blog.postman.com/how-to-make-money-using-postman-chaining-requests/"
   - type: link
     name: "Using a Postman monitor to water my plants"
-    url: "https://blog.postman.com/2017/11/08/using-a-postman-monitor-to-water-my-plants/"
+    url: "https://blog.postman.com/using-a-postman-monitor-to-water-my-plants/"
   - type: link
     name: "Conditional Workflows in Postman"
-    url: "https://blog.postman.com/2016/03/23/conditional-workflows-in-postman/"
+    url: "https://blog.postman.com/conditional-workflows-in-postman/"
   - type: section
     name: "Next Steps"
   - type: link

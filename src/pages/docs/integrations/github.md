@@ -15,7 +15,7 @@ contextual_links:
     name: "Related Blog posts"
   - type: link
     name: "Backup and Sync your Postman Collections on GitHub"
-    url: "https://blog.postman.com/2017/03/10/backup-and-sync-your-postman-collections-on-github/"
+    url: "https://blog.postman.com/backup-and-sync-your-postman-collections-on-github/"
 ---
 
 > __[Syncing API Schemas on GitHub is available with a free Postman account. You can back up your collections to GitHub on Postman Team, Business, and Enterprise plans.](https://www.getpostman.com/pricing)__

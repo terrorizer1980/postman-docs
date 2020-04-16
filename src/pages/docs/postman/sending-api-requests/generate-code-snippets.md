@@ -24,7 +24,7 @@ contextual_links:
     name: "Related Blog Posts"
   - type: link
     name: "Writing front-end API code with Postman"
-    url: "https://blog.postman.com/2015/08/31/writing-front-end-api-code-with-postman/"
+    url: "https://blog.postman.com/writing-front-end-api-code-with-postman/"
 
 warning: false
 

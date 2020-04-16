@@ -20,7 +20,7 @@ contextual_links:
     name: "Related Blog Posts"
   - type: link
     name: "Wondering About Air Quality? Postman Can Help."
-    url: "https://blog.postman.com/2017/10/14/wondering-about-air-quality-postman-can-help/"
+    url: "https://blog.postman.com/wondering-about-air-quality-postman-can-help/"
   - type: section
     name: "Next Steps"
   - type: link

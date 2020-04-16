@@ -15,10 +15,10 @@ contextual_links:
     name: "Related Blog Posts"
   - type: link
     name: "Streamline access control with extended roles & permissions"
-    url: "https://blog.getpostman.com/2019/03/11/streamline-access-control-with-extended-roles-permissions/"
+    url: "https://blog.postman.com/streamline-access-control-with-extended-roles-permissions/"
   - type: link
     name: "Manage large teams in Postman with workspaces, permissions & more"
-    url: "https://blog.getpostman.com/2019/07/23/postman-team-workspaces-and-permissions/"
+    url: "https://blog.postman.com/postman-team-workspaces-and-permissions/"
 ---
 
 > Certain team options are only available on **[Postman Team, Business, and Enterprise plans](https://www.postman.com/pricing)**. To see which roles are available on your plan, go to your **[web dashboard](https://app.postman.co/settings/team/roles)**.

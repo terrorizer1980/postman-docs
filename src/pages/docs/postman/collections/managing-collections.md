@@ -14,7 +14,7 @@ contextual_links:
     name: "Related Blog Posts"
   - type: link
     name: "Audit your AWS infrastructure with Postman"
-    url: "https://blog.postman.com/2017/12/19/audit-your-aws-infrastructure-with-postman/"
+    url: "https://blog.postman.com/audit-your-aws-infrastructure-with-postman/"
   - type: section
     name: "Next Steps"
   - type: link
