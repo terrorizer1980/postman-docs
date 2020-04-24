@@ -43,10 +43,6 @@ There are two types of Run in Postman buttons:
 
 With both buttons you have the option to [include an environment](/docs/postman-for-publishers/run-in-postman/environments-run-button/). The environment will open in the Postman app along with a copy of your collection whenever a user clicks your button. The user can then input their own [variable values in the environment](/docs/postman/variables-and-environments/variables/).
 
-## Updating collections for Run in Postman
-
-When you create a Run in Postman button for a collection, the button is not automatically updated with any changes made to that collection.
-
 ## Accessing the Run in Postman API
 
 You can access the JavaScript [Run in Postman API](/docs/postman-for-publishers/run-in-postman/run-button-API/) through the dynamic Run in Postman button. Use the API to create and modify environments included in your button. You can also include multiple buttons on a single page with segregated environments, each environment with its own button.
