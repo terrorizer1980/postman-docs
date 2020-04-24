@@ -20,16 +20,6 @@ contextual_links:
       name: "WTD: Postman for API development and docs"
       url: "https://podcast.writethedocs.org/2018/01/22/postman-for-api-docs-write-the-docs/"
     - type: section
-      name: "Accessing the Run in Postman API"
-    - type: link
-      name: "Run in Postman button API"
-      url: "/docs/postman-for-publishers/run-in-postman/run-button-API/"
-    - type: section
-      name: "Security considerations"
-    - type: link
-      name: "Security at Postman"
-      url: "https://www.postman.com/security"
-    - type: section
       name: "Next steps"
     - type: link
       name: "Creating the Run in Postman button"
