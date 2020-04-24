@@ -20,7 +20,7 @@ contextual_links:
       name: "WTD: Postman for API development and docs"
       url: "https://podcast.writethedocs.org/2018/01/22/postman-for-api-docs-write-the-docs/"
     - type: section
-      name: "Next steps"
+      name: "next steps"
     - type: link
       name: "Creating the Run in Postman button"
       url: "/docs/postman-for-publishers/run-in-postman/creating-run-button/"
