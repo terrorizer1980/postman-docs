@@ -4,6 +4,8 @@ Thanks for your interest in contributing to the Postman docs! :rocket::book::tro
 
 Check out the [contributing](CONTRIBUTING.md) guide for a step by step overview of making your contribution. Read on for tips on what types of language to use in your edits and additions.
 
+> If you're contributing to the FAQs, the guidelines are a little different—check out [FAQ style](#faq-style).
+
 * [Audience](#audience)
 * [Language style](#language-style)
     * [Grammar and word choice](#grammar-and-word-choice)
@@ -13,6 +15,7 @@ Check out the [contributing](CONTRIBUTING.md) guide for a step by step overview 
     * [Document sections](#document-sections)
 * [Images](#images)
 * [Links](#links)
+* [FAQ Style](#faq-style)
 * [Publish!](#publish)
 
 _This style guide is a work in progress, and we'll be continuing to iterate on it—create an [issue](https://github.com/postmanlabs/postman-docs/issues) if you'd like to provide feedback! Please also note that the Postman team will be working to apply these guidelines across the learning center—initially focusing on the core documentation, then later on additional material such as tutorials._
@@ -333,6 +336,38 @@ Don't display a raw URL in text, unless seeing the URL is essential to the learn
 :thumbsup::white_check_mark: Send a request to `https://postman-echo.com/get`
 
 ---
+
+## FAQ style
+
+FAQs are a little different in style than the main documentation content. If you're contributing an FAQ don't worry so much about language style—these are more conversational / friendly and less formal than the content in the main documentation sections. Here are some of the key differences:
+
+You can use first person!
+
+---
+
+:thumbsup::white_check_mark: Contact us at sales@postman.com and we will...
+
+---
+
+Don't include subheadings in your FAQ content. These appear as page sections within a topic page, so to maintain consistent navigation don't include any subheadings inside your FAQ.
+
+You can make time-specific references in FAQs—if the content relates to a temporary problem.
+
+---
+
+:thumbsup::white_check_mark: Our team is actively investigating...
+
+---
+
+Basic formatting guidelines for FAQs are as follows (this is a condensed version of the main docs guidelines above):
+
+* Use **bold** for UI items (not quotes).
+* Include code excerpts between backticks (single for inline code and three above / below code blocks).
+* Use blockquotes for notes (`>`).
+* Don't include raw URLs in content unless seeing the URL is key to understanding the info (don't use a raw URL where you're just linking to another resource).
+* Use meaningful link text.
+* Include alt text for images.
+* When you add an FAQ, make sure you add a link to it in the table of contents at the top of the page.
 
 ## Publish!
 
