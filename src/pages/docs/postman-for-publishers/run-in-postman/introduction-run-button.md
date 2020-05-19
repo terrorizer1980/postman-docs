@@ -5,25 +5,25 @@ page_id: "introduction_run_button"
 warning: false
 contextual_links:
     - type: section
-      name: "Intro"
+      name: "Prerequisites"
+    - type: link
+      name: "Collections"
+      url: "/docs/postman/collections/intro-to-collections/"
+    - type: section
+      name: "Additional resources"
+      type: subtitle
+      name: "Videos"
+      type: link
+      name: "How to share Postman collections"
+      url: "https://www.youtube.com/watch?v=mVTsK6ZdY6c"
+    - type: link
+      name: "WTD: Postman for API development and docs"
+      url: "https://podcast.writethedocs.org/2018/01/22/postman-for-api-docs-write-the-docs/"
+    - type: section
+      name: "Next steps"
     - type: link
       name: "Creating the Run in Postman button"
       url: "/docs/postman-for-publishers/run-in-postman/creating-run-button/"
-    - type: section
-      name: "Dynamic and Static button with environments"
-    - type: link
-      name: "Run in Postman button API"
-      url: "/docs/postman-for-publishers/run-in-postman/run-button-API/"
-    - type: section
-      name: "Dynamic and Static buttons with environments"
-    - type: link
-      name: "Environments in Run in Postman"
-      url: "/docs/postman-for-publishers/run-in-postman/environments-run-button/"
-    - type: section
-      name: "Dynamic and Static buttons with environments"
-    - type: link
-      name: "Using variables"
-      url: "/docs/postman/variables-and-environments/variables/"
 
 ---
 
@@ -65,7 +65,7 @@ A copy of your collection will be imported into the user's app, and the app will
 
 ## Security considerations
 
-This section only covers security details related to the Run in Postman feature. Refer to our [complete security practices](https://www.postman.com/security) for general details.
+This section only covers security details related to the Run in Postman feature. Refer to the [complete security practices page](https://www.postman.com/security) for general details.
 
 * Do a test import of your collection to be sure no sensitive data, like access keys, have been included. You can create a duplicate of your collection and remove any data you do not want shared. Duplicate your collection from the ellipsis **(...)** menu next to your collection name.
     * ![Ellipsis menu](https://assets.postman.com/postman-docs/Resized+Ellipsis+menu+.jpg)
