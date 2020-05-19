@@ -27,13 +27,13 @@ contextual_links:
 
 ---
 
-The Run in Postman button is a way to give users working with your APIs direct access to your endpoints. When you [create a button](/docs/postman-for-publishers/run-in-postman/creating-run-button/) for a collection and then embed it in your API documentation, website, or GitHub repo, a copy of that collection will open in the Postman app whenever a user clicks the button.
+The Run in Postman button is a way to give users working with your APIs direct access to your endpoints. When you [create a button](/docs/postman-for-publishers/run-in-postman/creating-run-button/) for a collection and then embed it in your API documentation or website, a copy of that collection will open in the Postman app whenever a user clicks the button.
 
 ![Travefy button](https://assets.postman.com/postman-docs/Travefy+API+RIP+button.jpg)
 
 > The Run in Postman button works with description formats like Swagger, RAML, and GitHub.
 
-## Dynamic and Static buttons with environments
+## Dynamic and Static buttons
 
 There are two types of Run in Postman buttons:
 
@@ -47,19 +47,13 @@ With both buttons you have the option to [include an environment](/docs/postman-
 
 You can access the JavaScript [Run in Postman API](/docs/postman-for-publishers/run-in-postman/run-button-API/) through the dynamic Run in Postman button. Use the API to create and modify environments included in your button. You can also include multiple buttons on a single page with segregated environments, each environment with its own button.
 
-The API consists of a series of JavaScript functions that can alter your button's behavior:
-
-* `env.create`: Creates a new environment.
-* `env.assign`: Edits an existing environment.
-* `env.replace`: Replaces and entire environment.
-
 ## User interaction with your button
 
-When a user finds your button displayed on your website they click it, they'll be prompted to open the Postman app. If they haven't downloaded the app yet, they'll have the option to do so then.
+When a user finds your button displayed on your website and they click it, they'll be prompted to open the Postman app. If they haven't downloaded the app yet, they'll have the option to do so then.
 
  ![Modal display](https://assets.postman.com/postman-docs/Unsized+modal+image.jpg)
 
-> If the button is dynamic, the prompts will open for the user in a modal, like the screenshot above. (The modal above is specific to Macs.) If the button is static, the prompts will open for the user in a new page.
+> If the button is dynamic, the prompts will open for the user in a modal, like the screenshot above (above modal is specific to Macs). If the button is static, the prompts will open for the user in a new page.
 
 A copy of your collection will be imported into the user's app, and the app will open on the user's desktop.
 
