@@ -31,7 +31,7 @@ Save the generated token to use later.
 
 ## Configuring a backup for Postman Collections in GitLab
 
-1. In the [Integrations page](https://go.postman.co/workspaces), find GitLab from Postman's list of third party integrations.
+1. In the [Integrations](https://go.postman.co/workspaces) tab for your workspace, select GitLab from the list of third party integrations.
 
     [![select gitlab integration](https://assets.postman.com/postman-docs/integrations-gitlab1.png)](https://assets.postman.com/postman-docs/integrations-gitlab1.png)
 
@@ -87,6 +87,8 @@ Now every change that is saved to your Postman Collection automatically commits 
 [![backup](https://assets.postman.com/postman-docs/WS-integrations-gitlab-backupPostToken2.png)](https://assets.postman.com/postman-docs/WS-integrations-gitlab-backupPostToken2.png)
 
 In "Advanced Options" you can enter a custom directory name or leave "Postman Collections" as the default. You can specify a branch for commit or the default branch of the repository will be used. Make sure you have write access to the branch you are trying to push your changes.
+
+> Note that the branch you want to back up your collection to must already exist.
 
 [![gitlab advanced options](https://assets.postman.com/postman-docs/integrations-gitlab-advOptions1.png)](https://assets.postman.com/postman-docs/integrations-gitlab-advOptions1.png)
 

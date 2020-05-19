@@ -37,7 +37,7 @@ Your Postman collections display a changelog for reviewing create, update, and d
 ## Contents
 
 * Viewing changes to a [collection](#viewing-the-collection-changelog), [workspace](#viewing-workspace-activity), [team](#viewing-team-activity), or [user account](#viewing-user-activity).
-* [Restoring collections](#restoring-collections)
+* [Restoring collections and folders](#restoring-collections-and-folders)
 * [Exporting team activity](#exporting-team-activity-to-other-platforms)
 * [Next steps](#next-steps)
 
@@ -58,6 +58,10 @@ You can alternatively review a collection changelog from the [Workspaces dashboa
 ## Viewing workspace activity
 
 You can access the activity feed [from the Postman app](#accessing-the-activity-feed-from-the-postman-app) or the [web dashboard](#accessing-the-activity-feed-from-the-web-dashboard). The activity feed will show information on who added or removed collections, environments, or entities from the workspace as well as members joining and leaving the workspace. You can [filter this information](#filtering-the-activity-feed) directly within the activity feed.
+
+You can also see who is actively working in your workspace at any time. The avatars of members currently active in the workspace will be brightly colored and displayed at the top of the screen of the Postman app and web Dashboard.
+
+<img alt="Active user" src="https://assets.postman.com/postman-docs/Beesly+active+member.jpg" width="300px"/>
 
 ### Accessing the activity feed from the Postman app
 
@@ -103,11 +107,15 @@ You can review the activity for a team with a Postman Team, Business, or Enterpr
 
 You can review the activity for your own account in the [Postman web app](https://app.getpostman.com). Click your avatar in the top right, and select __Profile__—the __Activity__ tab will list your events.
 
-## Restoring collections
+## Restoring collections and folders
 
 With a Postman Team, Business, or Enterprise account, you can use the changelog to restore a collection to a previous point in time. Click __Restore__ under a change to revert the collection to the point immediately _after_ the change was applied. The changelog will update and Postman will display a confirmation message indicating the time the collection has been restored to.
 
 ![Restore from Changelog](https://assets.postman.com/postman-docs/restore-changelog.png)
+
+If you accidentally delete a folder, you can recover it by clicking __Restore__.
+
+<img alt="Recover Folder" src="https://assets.postman.com/postman-docs/restore-folder.jpg" width="400px"/>
 
 You may see a warning on any request tabs you have open that are affected by reverting the collection, for example indicating a conflict or deletion.
 

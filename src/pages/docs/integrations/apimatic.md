@@ -29,7 +29,7 @@ If you don't already have a [GitHub account](https://github.com/), you'll need t
 
 ## Configuring APIMatic Integration
 
-1. In the [Integrations page](https://go.postman.co/workspaces), find APIMatic in the list of Postman’s third party integrations.
+1. In the [Integrations](https://go.postman.co/workspaces) tab for your workspace, select APIMatic from the list of third party integrations.
 
     [![select apimatic](https://assets.postman.com/postman-docs/integrations_APImatic.png)](https://assets.postman.com/postman-docs/integrations_APImatic.png)
 
@@ -56,7 +56,7 @@ If you don't already have a [GitHub account](https://github.com/), you'll need t
    * Specify a directory in the repository where you want to add the collection.
    * Enter a filename for the directory in the repository.
    * Select the format in which you want to save the collection, such as Postman 2.0 or APIMatic format.
-   * Specify the branch where you want to add the collection.
+   * Specify the branch where you want to add the collection. _Note that the branch you want to back up your collection to must already exist._
 
 6. Click the **Add Integration** button.
 
