@@ -11,9 +11,9 @@ contextual_links:
       url: "/docs/postman/collections/intro-to-collections/"
     - type: section
       name: "Additional resources"
-      type: subtitle
+    - type: subtitle
       name: "Videos"
-      type: link
+    - type: link
       name: "How to share Postman collections"
       url: "https://www.youtube.com/watch?v=mVTsK6ZdY6c"
     - type: link
