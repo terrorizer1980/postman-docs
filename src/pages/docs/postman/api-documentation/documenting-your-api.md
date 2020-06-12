@@ -78,7 +78,7 @@ Enter or edit the markdown description of your collection and click __Save__.
 
 You will see a confirmation that your documentation is published, and a link you can visit to view it in the browser.
 
-> This documentation will be private by default. Only other members of your workspace or people you share the collection with will be able to view it. You can choose to [publish your documentation](/docs/postman/api-documentation/publishing-your-docs/) publicaly.
+> This documentation will be private by default. Only people you share the collection with will be able to view it. You can [publish your documentation](/docs/postman/api-documentation/publishing-your-docs/) to make it public.
 
 ![Docs Link](https://assets.postman.com/postman-docs/docs-link.jpg)
 
