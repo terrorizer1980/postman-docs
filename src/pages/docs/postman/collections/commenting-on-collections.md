@@ -52,7 +52,7 @@ You can comment on requests [from the Postman Dashboard](#from-the-postman-dashb
 
 ## Commenting on request parameters
 
-You can leave comments on request parameters (params, headers, request body of type form-data, and x-www-form-urlencoded) from the Postman app.
+You can leave comments on request parameters (query parameters, path parameters, headers, request body of type form-data, and x-www-form-urlencoded) from the Postman app.
 
 > You can only add comment to parameters on saved requests.
 
