@@ -37,14 +37,14 @@ You can comment on requests [from the Postman Dashboard](#from-the-postman-dashb
 
 > You can only post comments on saved requests.
 
-### From the Postman Dashboard
+### Commenting from the Dashboard
 
 1. Sign in to the [Dashboard](https://app.getpostman.com).
 2. Navigate to the request you want to leave a comment on.
 3. Click **Comments** next to the request name.
 4. Write your comment, then click **Add Comment**.
 
-### From the Postman app
+### Commenting in the app
 
 1. Navigate to the request you want to leave a comment on.
 2. Click **Comments** at the top-right of the window.
@@ -52,11 +52,11 @@ You can comment on requests [from the Postman Dashboard](#from-the-postman-dashb
 
 ## Commenting on request parameters
 
-You can leave comments on request parameters (key, value, or description) from the Postman app.
+You can leave comments on request parameters (params, headers, request body of type form-data, and x-www-form-urlencoded) from the Postman app.
 
 > You can only add comment to parameters on saved requests.
 
-1. Open the request you'd like to comment.
+1. Open the request you'd like to comment on.
 2. Select some or all of the content of the key, value, or description.
 3. Click **Comment**, enter your comment, then click **Add Comment**
 
@@ -64,15 +64,15 @@ You can leave comments on request parameters (key, value, or description) from t
 
 ## Reading comments in the app and on the Dashboard
 
-You can see comments made by teammates on requests and request parameters in the Postman app or the [Dashboard](https://app.getpostman.com). Comments on collections can only be accessed from the Dashboard.
+You can see comments made by teammates on requests and request parameters in the Postman app or the [Dashboard](https://app.getpostman.com). You can only access comments on collections from the Dashboard.
 
 ### Reading comments in the Postman app
 
-You can read both comments made on the request and on request parameters from the app.
+You can read comments made on the request and on request parameters from the app.
 
 1. In the Postman app, open the request that has the comments you want to review.
 2. At the top, click **Comments**.
-3. Select if you'd like to see comments made on the request (**Comments**) or on the request parameters (**Inline Comments**)
+3. Select comments made on the request (**Comments**) or on the request parameters (**Inline Comments**).
    * You can filter inline comments by **Open Comments**, **Resolved Comments**, or both.
 
 ![See comment in the app](https://assets.postman.com/postman-docs/collab09-see-comments-from-app.gif)
@@ -81,7 +81,7 @@ You can read both comments made on the request and on request parameters from th
 
 ### Reading comments on the Dashboard
 
-You can read all type of comments through the [Postman Dashboard](https://app.getpostman.com).
+You can read all comments through the [Postman Dashboard](https://app.getpostman.com).
 
 1. Sign in to the [Dashboard](https://app.getpostman.com).
 2. At the top, select a **Workspace** and then click the **Collections** tab.
@@ -98,20 +98,19 @@ You can make changes to comments you've already posted. Other team members canno
 1. In the Postman app or [Dashboard](https://app.getpostman.com), open the collection with the comment you want to edit.
 2. Find the comment and click **Comment** > **Edit**.
 
-![Edit comment](https://assets.postman.com/postman-docs/collab09-edit-comment.jpg)
+<img src="https://assets.postman.com/postman-docs/collab09-edit-comment.jpg" alt="Edit comment" width="476px"/>
 
 ## Resolving comments
 
-You can resolve comments or threads of comments made on request parameters.
+You can resolve inline comments when you're done with them.
 
-> Resolving threads is only possible through the app
+> Resolving inline comments is only possible through the app.
 
-1. Open the collection with the comment or thread of comments you want to resolve.
+1. Open the collection with the inline comment(s) you want to resolve.
 2. Click **Comments** to open the comment sidebar.
 3. Click **Inline Comments**.
-4. Click **Resolve** next to the thread you'd like to resolve.
+4. Click **Resolve** next to the inline comment(s) you'd like to resolve.
 
-GIF resolving comments
 ![Resolving comment](https://assets.postman.com/postman-docs/collab09-resolve-comment.gif)
 
 ## Deleting comments
@@ -119,7 +118,7 @@ GIF resolving comments
 1. In the Postman app or Dashboard, open the collection with the comment you want to delete.
 2. Find the comment and click **Comments** > **Delete**.
 
-![Delete comment](https://assets.postman.com/postman-docs/collab09-delete-comment.jpg)
+<img src="https://assets.postman.com/postman-docs/collab09-delete-comment.jpg" alt="Delete comment" width="470px"/>
 
 > For moderation purposes, admins can delete comments made by anyone, but cannot modify comments.
 
