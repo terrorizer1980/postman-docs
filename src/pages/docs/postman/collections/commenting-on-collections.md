@@ -52,7 +52,7 @@ You can comment on requests [from the Postman Dashboard](#commenting-from-the-da
 
 ## Commenting on request parameters
 
-> Commenting on request parameters is a beta feature. 
+> Commenting on request parameters is a beta feature.
 
 You can leave comments on request parameters (query parameters, path parameters, headers, request body of type form-data, and x-www-form-urlencoded) from the Postman app.
 
