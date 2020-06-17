@@ -33,7 +33,7 @@ You can leave comments on collections from the [Postman Dashboard](https://app.g
 
 ## Commenting on a request
 
-You can comment on requests [from the Postman Dashboard](#from-the-postman-dashboard) or [in the Postman app](#from-the-postman-app). When you comment on a request, it's reflected in both the Dashboard and the app.
+You can comment on requests [from the Postman Dashboard](#commenting-from-the-dashboard) or [in the Postman app](#commenting-in-the-app). When you comment on a request, it's reflected in both the Dashboard and the app.
 
 > You can only post comments on saved requests.
 
@@ -98,7 +98,7 @@ You can make changes to comments you've already posted. Other team members canno
 1. In the Postman app or [Dashboard](https://app.getpostman.com), open the collection with the comment you want to edit.
 2. Find the comment and click **Comment** > **Edit**.
 
-<img src="https://assets.postman.com/postman-docs/collab09-edit-comment.jpg" alt="Edit comment" width="476px"/>
+![Edit comment](https://assets.postman.com/postman-docs/collab09-edit-comment.jpg)
 
 ## Resolving comments
 
@@ -118,7 +118,7 @@ You can resolve inline comments when you're done with them.
 1. In the Postman app or Dashboard, open the collection with the comment you want to delete.
 2. Find the comment and click **Comments** > **Delete**.
 
-<img src="https://assets.postman.com/postman-docs/collab09-delete-comment.jpg" alt="Delete comment" width="470px"/>
+![Delete comment](https://assets.postman.com/postman-docs/collab09-delete-comment.jpg)
 
 > For moderation purposes, admins can delete comments made by anyone, but cannot modify comments.
 
