@@ -28,6 +28,10 @@ contextual_links:
 
 > __[API reports are available on Postman Enterprise.](https://www.postman.com/pricing)__
 
+The Postman Enterprise plan is our enterprise-grade offering, with powerful tools to securely manage, organize, and accelerate large-scale API development.
+
+To take a quicklook at the reports feature, you can click on the [Analyse Reports.](https://cooper.postman-beta.co/reports/apis) The __Reports__ section of the web dashboard will open in your browser. Postman generates reports on [teams](#team-reports) and [APIs](#api-reports).
+
 You can access reports on your APIs in the [Postman web dashboard](https://app.getpostman.com/dashboard). API reports visualize data on API activities including creation, collection execution, test runs, and more, providing insights on performance, troubleshooting, and SLA adherence, as well as team and organization metrics.
 
 To generate reports in Postman, first ensure you have carried out the following steps:
