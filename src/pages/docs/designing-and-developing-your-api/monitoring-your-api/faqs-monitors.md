@@ -6,8 +6,6 @@ search_keyword: "console.log, console.warn"
 warning: false
 ---
 
-## General questions
-
 ### What can I test with Monitors?
 
 You can use Postman Monitors for simple uptime monitoring to ensure your servers are online or for performance monitoring to ensure your servers are responding promptly. You also can write detailed [test suites](/docs/writing-scripts/test-scripts/) to check monitors for proper behavior, business logic, error handling, and so on.
