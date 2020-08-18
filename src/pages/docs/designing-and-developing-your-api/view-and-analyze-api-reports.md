@@ -47,7 +47,9 @@ The __Reports__ section of the web dashboard will open in your browser. Postman 
 
 The __Postman Enterprise__ plan is our enterprise-grade offering, with powerful tools to securely manage, organize, and accelerate large-scale API development.
 
-The left navigation helps to understand around the reports easily:
+[![reports dashboard](https://assets.postman.com/postman-docs/reports-dashboard.jpg)](https://assets.postman.com/postman-docs/reports-dashboard.jpg)
+
+The left navigation displays the different views to access the reports:
 
 * __Team Activity__
 * __All APIs__
@@ -69,24 +71,26 @@ Team overview provides the following information:
 * __Total slots__  as the number of slots in the team
 * __Invitations sent__ is the total number of invitations which was sent
 * __Open vs used slots__ used slots include any pending invitations sent or approved by a team admin
-* __Active users over time__
+* __Active users over time__ are the users who have signed into Postman atleast once over the past 30 days.
 * __Team size over time__ is the size of the team over a period of time
 * __SSO identity provider__
 
-The active users over time are the users who have signed into Postman atleast once over the past 30 days. In this example, the active users for the month of May 2020 is 83.
+[![active users](https://assets.postman.com/postman-docs/active-users.jpg)](https://assets.postman.com/postman-docs/active-users.jpg)
+
+> In this example, the active users for the month of May 2020 is 83.
 
 Billing provides the following information:
 
-* __Plan__ the current active plan the user has subscribed
-* __Billing cycle__ as monthly or annually
-* __Renewal date__ as the date of renewal of the existing plan
+* __Plan__ is the current active plan the user has subscribed
+* __Billing cycle__ is either monthly or annually
+* __Renewal date__ is the date of renewal of the existing plan
 
 Team activity provides the following information:
 
 * __Total collections__ is the total number of collections in team and personal workspaces including private workspaces
 * __Total APIs__ is the total number of APIs in the team and personal workspaces including private workspaces
 * __Publicly documented collection__
-* __Active monitors__ is the total number of active monitors in  team workspaces including private workspaces
+* __Active monitors__ is the total number of active monitors in team workspaces including private workspaces. "Active" monitors refer to any monitor that is scheduled to run.
 * __Requests sent in Postman__ as the requests sent manually in Postman and not any requests sent via Newmans, monitoring runs or the collection runner
 
 [![request sent in postman](https://assets.postman.com/postman-docs/request-sent-in-postman.jpg)](https://assets.postman.com/postman-docs/request-sent-in-postman.jpg)
@@ -112,11 +116,12 @@ The __Reports__ &gt; __All APIs__ report provides metrics, including API overvie
 
 API overview provides the following information:
 
-* __Total APIs__
+* __Total APIs__ Total number of APIs created on Postman in all the team workspaces
 * __APIs created over time__ the total number of APIs created over a period of time on a monthly level
-* __Private Network APIs__
-* __Shared APIs__
-* __APIs created/updated in last 24 hours__
+* __Private Network APIs__ the number of APIs published on the teams' network
+* __Shared APIs__ the number of APIs shared with team workspaces
+* __APIs created in last 24 hours__ APIs created in the past 24 hours
+* __APIs updated in last 24 hours__ API is considered active if there is some kind of activity/updation in the last 1 day
 
 [![api overview](https://assets.postman.com/postman-docs/api-overview.jpg)](https://assets.postman.com/postman-docs/api-overview.jpg)
 
@@ -138,7 +143,11 @@ API development provides the following information:
 
 > In this example, the count of APIs for OpenAPI(3.0) is 249.
 
-* __APIs with mocks/monitors/tests/documentation__ The number of APIs that are defined, documented, monitored, mocked, and tested
+* __APIs with mocks__ the number of APIs associated with the team having mocks
+* __APIs with monitors__ the number of APIs associated with the team having running monitors
+* __APIs with tests__ the number of APIs associated with the team having test suites, integration tests and contract tests
+* __APIs with documentation__ the number of APIs associated with the team with attached  
+documentation
 
 [![api mocks monitors tests](https://assets.postman.com/postman-docs/api-mocks-monitors-tests.jpg)](https://assets.postman.com/postman-docs/api-mocks-monitors-tests.jpg)
 
