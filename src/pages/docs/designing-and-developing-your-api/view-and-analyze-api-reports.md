@@ -193,6 +193,14 @@ documentation
 
 > In this example, the APIs with/without mocks, monitors, tests and documentation is visualized in percentages. Hover on the chart to view the API data in figures. From the chart, you can observe that the APIs with documentation is 7%.
 
+## Individual API view
+
+The __View reports by API__ provide the individual API view where you can enter the API name in the search box and generate the API report.
+
+[![private-network-api](https://assets.postman.com/postman-docs/view-api-report.jpg)](https://assets.postman.com/postman-docs/view-api-report.jpg)
+
+> Click on __View reports by API__ > Enter __Reporting__ in the search box to view the above report.
+
 ## Postman business plan
 
 ![Reports Dashboard](https://assets.postman.com/postman-docs/reports-dash.jpg)
