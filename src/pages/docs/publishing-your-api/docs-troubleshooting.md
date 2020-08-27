@@ -1,30 +1,11 @@
 ---
-title: "Admin FAQs"
-order: 141
-page_id: "admin_faqs"
+title: "Documenting your API"
+order: 101
+page_id: "docs_troubleshooting"
+
 warning: false
-contextual_links:
-  - type: section
-    name: "Additional Resources"
-  - type: link
-    name: "Onboarding checklist"
-    url: "/docs/administration/onboarding-checklist/"
-  - type: link
-    name: "Managing your team"
-    url: "/docs/administration/managing-your-team/"
 
 ---
-
-<!-- ### question -->
-
-<!-- answer -->
-### Can I get a quote?
-
-Reach out to us at [sales@postman.com](sales@postman.com) with your team size and desired plan to receive a quote.
-
-### How many users can I have on my team?
-
-There's no limit to how many users you can have on your team. Admins of teams on Pro trial plans can add as many users as needed by going to their [Team's Dashboard](https://app.getpostman.com/dashboard/teams) and clicking on 'Invite users' button.
 
 ### I'm not able to access documentation via my configured custom domain
 
