@@ -140,3 +140,20 @@ See the following article for instructions on sharing DevTools logs with Postman
 With the Postman window open, click the following in the menu bar:
 
 * View → Developer → View Logs in...
+
+### What is Postman's security policy?
+
+Security is a top concern at Postman, and we have taken a number of measures to ensure that your data stays secure. Our infrastructure is managed by Amazon Web Services and follows security-related best practices. Payments are handled solely by Stripe (a PCI Level 1 Service Provider).
+Please view our complete security policy [here](https://www.getpostman.com/security).
+
+### What usage data does Postman collect?
+
+Postman does not track any content of your requests/responses.
+
+We only track the number of requests made, number of headers sent etc to identify what features of the app are being used. Even this information is anonymous - any Postman user adding a header will cause the same tracking information to be sent.
+
+You can disable all tracking by setting 'Send anonymous usage data to Postman' to No in the settings window.
+
+### Will Postman use my collection data in any way?
+
+No. As our [Privacy policy](https://www.getpostman.com/licenses/privacy) states, Postman will **not** sell, or rent, your collection/request/responses etc.

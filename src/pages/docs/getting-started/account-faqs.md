@@ -48,3 +48,7 @@ Once your password is reset, you can use your email + password combination to lo
 ### I logged in via Google. How do I set a password for my account?
 
 You'll need to head to the [forgot password page](https://app.getpostman.com/forgot-password) and enter your email. You should receive a reset password link on your email, which you can use to set a new password.
+
+### Where can I see my synced data?
+
+When using Postman it is best practice to store your requests in collections. Once stored you'll then be able to view all of your synced collections by logging in to your Postman account and navigating to [your dashboard](go.postman.co/me/collections).

@@ -124,4 +124,4 @@ If you had sync enabled, sign out, and sign back into the Postman app to recover
 
 If not, and you use the Chrome app, head to chrome://indexeddb-internals/ and search for "fhbjgbiflinjbdggehcddcbncdddomop". You should see two folders listed - you can create a zip file with the contents of those folders, and email them to help@postman.com. We should be able to recover your data.
 
-We strongly recommend moving to our native apps (available from https://www.postman.com/apps) and signing in to avail Sync features. 
+We strongly recommend moving to our native apps (available from https://www.postman.com/apps) and signing in to avail Sync features.
