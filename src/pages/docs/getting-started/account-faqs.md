@@ -19,6 +19,7 @@ contextual_links:
 ### My session expired - can't reset my password and can't access to old email
 
 If you're logged out due to a session revocation and cannot log back into your account because
+
 - you forgot your password AND
 - you can't reset your password as the email associated with your Postman account doesn't longer exist (e.g. the email is a former company-email)
 
@@ -39,7 +40,7 @@ Currently, we do have a workaround for the same - our team has released a featur
 
 If you're still facing issues with login please refer to this article [here](https://support.getpostman.com/hc/en-us/articles/115003693585-My-Google-account-has-two-factor-authentication-enabled-and-I-m-not-able-to-Signin-with-Google-from-the-Postman-app) or feel free to submit a ticket to our Support by navigating to the below link:
 
-*   [https://support.getpostman.com/hc/en-us/requests/new](https://support.getpostman.com/hc/en-us/requests/new)
+['https://support.getpostman.com/hc/en-us/requests/new'](https://support.getpostman.com/hc/en-us/requests/new)
 
 ### I tried using my credit card to pay for Pro, but the card was declined. What do I do
 
@@ -59,12 +60,9 @@ Once an automatic payment attempt fails, an invoice will be sent to the register
 
 As soon as these invoices are paid, your plan will be reactivated automatically. For check payments/bank transfers, the plan is reactivated once we receive the payment.
 
-
-
 ### I logged in via Google. How do I set a password for my account?
 
 You'll need to head to the [forgot password page](https://app.getpostman.com/forgot-password) and enter your email. You should receive a reset password link on your email, which you can use to set a new password.
-
 
 ### Invite link to team does not work?
 
@@ -104,18 +102,19 @@ For new teams, if you had selected the "admin role" during the payment process a
 
 If you selected the "billing role" during payment, an activation email would have been sent to the admin user you specified. If the user reports that they haven't received the email, you could direct the user to check their spam folder.
 
-
 ### Unable to reset password
 
 ## Resolution steps
-**Forgot password**
+
+### Forgot password
 
 If you've forgotten your password, please navigate to [this page](https://identity.getpostman.com/trouble-signing-in) and click *Trouble signing in?* in order to receive a password reset link via email. If aren't receiving password reset emails from us, please try the following:
+
 1. Check your email's Spam or Junk folder.
 2. Whitelist [noreply@notifications.getpostman.com](noreply@notifications.getpostman.com) in your email client, or domain policy if necessary. You can then request a password reset again, and the email should come through.
 3. If you are still unable to receive password reset emails after attempting the above steps, please contact help@postman.com.
 
-**Incorrect email at the time of Registration**
+### Incorrect email at the time of Registration**
 
 If you accidentally used an invalid email address during signup, and have forgotten your password, please contact [help@postman.com](help@postman.com) for assistance. Please be ready to provide the following information:
 

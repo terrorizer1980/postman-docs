@@ -26,8 +26,6 @@ Reach out to us at [sales@postman.com](sales@postman.com) with your team size an
 
 There's no limit to how many users you can have on your team. Admins of teams on Pro trial plans can add as many users as needed by going to their [Team's Dashboard](https://app.getpostman.com/dashboard/teams) and clicking on 'Invite users' button.
 
-
-
 ### Why am I not able to make plan/billing changes even though I'm receiving invoices and notifications for the team?
 
 If you receive billing notifications and emails about your Postman team, you're the designated billing contact for your team. However, in order to make any billing related changes like upgrading the plan or canceling a subscription, you'll need to be a member of the team (with the billing role enabled). A member with only the Billing role will not take up paid slots.

@@ -21,8 +21,6 @@ contextual_links:
 <!-- ### question -->
 
 <!-- answer -->
-
-
 ### Where can I find logs for the Postman app?
 
 **Note:** No request-level information is visible to us in the logs or via our internal systems. The only collection-related information that's logged is collection IDs and user IDs.
@@ -30,26 +28,20 @@ contextual_links:
 In the logs noted below, the file(s) _renderer-shared_ is where some details of synced data is referenced; you're welcome to audit it and redact anything you might not want to share.
 
 ---
-
-
-
-
 ---
 
 ## In Postman's installation directory
+
 Logs for the Postman app can be found in the following directories, depending on your operating system:
-
 **MacOS**
-
 `~/Library/Application Support/Postman/logs`
-
 Instructions:
 
 1. Copy the address above
 2. Press **command** + **space** to open _Spotlight Search_
 3. Paste the address you copied (**command** + **v**), and press return.
 
-**Windows**
+### Windows
 
 `%AppData%\Postman\logs`
 
@@ -59,19 +51,19 @@ Instructions:
 2. Open the _Start Menu_ and search for _explorer.exe_, then press **return**.
 3. Paste the address you copied (**control** + **v**), and press return
 
-**Linux**
+### Linux
 
 `~/.config/Postman/logs`
 
 Instructions:
 
-_See documentation for your Linux distribution_
+### See documentation for your Linux distribution
 
 ## From within the Postman app
 
 From the Postman app, you can access [DevTools](https://developers.google.com/web/tools/chrome-devtools/), or open the logs folder in Postman's installation directory.
 
-**DevTools**
+### DevTools
 
 With the Postman app window open, click following in the menu bar to open _DevTools_ for the current app view, or shared:
 
@@ -79,9 +71,10 @@ With the Postman app window open, click following in the menu bar to open _DevTo
 * View → Developer → Show DevTools (Shared)​
 
 See the following article for instructions on sharing DevTools logs with Postman Support:
+
 * [How to share logs with Postman for debugging issue?](https://support.getpostman.com/hc/en-us/articles/360025298633-How-to-share-logs-with-Postman-for-debugging-issue-)
 
-**Logs directory**
+### Logs directory
 
 With the Postman window open, click the following in the menu bar:
 
@@ -126,18 +119,20 @@ If your domain has CAA records set, you must explicitly allow LetsEncrypt to set
 
 ### How do I recover my data?
 
-Summary of Issue
-==============
+## Summary of Issue
 
 **One of the following may have brought you here**:
-- I opened the Postman native app and it looks empty - it looks like all my collections disappeared.
-- Data in the Postman native app, including Collections, environments, and globals, has been lost unexpectedly upon opening the app.
+
+1. I opened the Postman native app and it looks empty - it looks like all my collections disappeared.
+2. Data in the Postman native app, including Collections, environments, and globals, has been lost unexpectedly upon opening the app.
 
 **Why is this happening?**
-- This can happen because of the app's local database getting corrupted or when signing out of the app (which clears all local data).
-Resolution steps
---------------------------------
-**Check for synced data**
+
+* This can happen because of the app's local database getting corrupted or when signing out of the app (which clears all local data).
+
+## Resolution steps
+
+## Check for synced data
 
 If you were previously logged in to the app with your Postman account and had sync enabled, your data should be backed up to our servers. Signing out of the Postman app, and logging back in again, should restore your work.
 
@@ -156,29 +151,34 @@ _If you already have Postman Canary installed, make sure to sign-out of the app 
 
 2. Make a copy of the folder: **file__0.indexeddb.leveldb** in your Postman directory, and paste it into the IndexedDB folder in your PostmanCanary.
 
-**Windows**
-~~~~~~~~~~~~
-**Copy**: %appdata%\Postman\IndexedDB​\file__0.indexeddb.leveldb
-**Paste to**: %appdata%\PostmanCanary\IndexedDB​\
+## Windows
 ~~~~~~~~~~~~
 
-**macOS**
+**Copy**: %appdata%\Postman\IndexedDB​\file__0.indexeddb.leveldb
+**Paste to**: %appdata%\PostmanCanary\IndexedDB​\
+
+~~~~~~~~~~~~
+
+## MacOS
 ~~~~~~~~~~~
+
 **Copy**: ~/Library/Application Support/Postman/IndexedDB/file__0.indexeddb.leveldb
 **Paste to**: ~/Library/Application Support/PostmanCanary/IndexedDB
 ~~~~~~~~~~~
 
-**Linux**
+## Linux
 ~~~~~~~~~~~
+
 **Copy**: ~/.config/Postman/IndexedDB/file__0.indexeddb.leveldb
 **Paste to**: ~/.config/PostmanCanary/IndexedDB/
+
 ~~~~~~~~~~~~
 
-3. Open Postman Canary, and bulk export your data from within the app. Save the resulting .json file to your local machine. To learn more, please refer to [Data Dumps](https://learning.postman.com/docs/postman/collections/data_formats/#data-dumps)
+1. Open Postman Canary, and bulk export your data from within the app. Save the resulting .json file to your local machine. To learn more, please refer to [Data Dumps](https://learning.postman.com/docs/postman/collections/data_formats/#data-dumps)
 
-4. Open the stable Postman app (not Canary), and switch to a workspace where any recovered content will be added, and import the .json file you saved in step 3. To learn more, please refer to [Importing Data](https://learning.postman.com/docs/postman/collections/data_formats/#importing-postman-data)
+2. Open the stable Postman app (not Canary), and switch to a workspace where any recovered content will be added, and import the .json file you saved in step 3. To learn more, please refer to [Importing Data](https://learning.postman.com/docs/postman/collections/data_formats/#importing-postman-data)
 
-5. If any content is recovered, it will be added to your workspace after the import. If no data is recovered, you may only see a few empty default environments
+3. If any content is recovered, it will be added to your workspace after the import. If no data is recovered, you may only see a few empty default environments
 
 If you need further assistance, please open a ticket with our Support Team: [https://www.postman.com/support] (https://www.postman.com/support)
 

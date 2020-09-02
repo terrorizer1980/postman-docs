@@ -57,18 +57,6 @@ _If you already have Postman Canary installed, make sure to sign-out of the app 
 **Paste to**: %appdata%\PostmanCanary\IndexedDB​\
 ~~~~~~~~~~~~
 
-**macOS**
-~~~~~~~~~~~
-**Copy**: ~/Library/Application Support/Postman/IndexedDB/file__0.indexeddb.leveldb
-**Paste to**: ~/Library/Application Support/PostmanCanary/IndexedDB
-~~~~~~~~~~~
-
-**Linux**
-~~~~~~~~~~~
-**Copy**: ~/.config/Postman/IndexedDB/file__0.indexeddb.leveldb
-**Paste to**: ~/.config/PostmanCanary/IndexedDB/
-~~~~~~~~~~~~
-
 3. Open Postman Canary, and bulk export your data from within the app. Save the resulting .json file to your local machine. To learn more, please refer to [Data Dumps](https://learning.postman.com/docs/postman/collections/data_formats/#data-dumps)
 
 4. Open the stable Postman app (not Canary), and switch to a workspace where any recovered content will be added, and import the .json file you saved in step 3. To learn more, please refer to [Importing Data](https://learning.postman.com/docs/postman/collections/data_formats/#importing-postman-data)
