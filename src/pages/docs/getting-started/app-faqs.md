@@ -27,9 +27,6 @@ contextual_links:
 
 In the logs noted below, the file(s) _renderer-shared_ is where some details of synced data is referenced; you're welcome to audit it and redact anything you might not want to share.
 
----
----
-
 ## In Postman's installation directory
 
 Logs for the Postman app can be found in the following directories, depending on your operating system:
@@ -137,7 +134,7 @@ If your domain has CAA records set, you must explicitly allow LetsEncrypt to set
 If you were previously logged in to the app with your Postman account and had sync enabled, your data should be backed up to our servers. Signing out of the Postman app, and logging back in again, should restore your work.
 
 To check what is synced to your Postman account, navigate to the link below.
-- [https://go.postman.co/me](https://go.postman.co/me)
+[https://go.postman.co/me](https://go.postman.co/me)
 
 **Attempt to recover local data**
 If your work is not backed up to a Postman account, you can attempt to recover data from the app's local storage using the steps below.
@@ -200,11 +197,9 @@ If you're using the Postman Chrome app:
 2. Before reinstalling, head to [chrome://indexeddb-internals/](chrome://indexeddb-internals/) and search for ""fhbjgbiflinjbdggehcddcbncdddomop"". There will be two folders listed - backup the contents of these folders.
 3. Reinstall (navigate to this [link](https://www.getpostman.com/apps) and reinstall the latest version) and move the backup to its original location.
 
-
 ### Postman window is blank
 
 **Issue**
----------
 
 For Windows computers with certain GPUs, Postman may display a **blank/black window** when opened, and elements in the app may not be rendering correctly or at all.
 
@@ -296,3 +291,407 @@ When the settings been created in the **"Get Access Token"** to have variables f
 ![](https://support.getpostman.com/hc/article_attachments/360013550753/mceclip0.png)The reason being, the variables saved while generating auth token works fine only for the collections or requests on the app where the token was generated and it will not be synced as it may contain sensitive data.
 
 So, If you try to access any collection/request which uses the same auth token on any other machine or app, it will not work since this is an expected behavior of the variables created for OAuth2.0.
+
+Audit logs list important team events. An admin can review audit logs to determine:
+
+* When users were added to the team.
+* When users received an invitation to a team.
+* Which user performed a specific action.
+
+Audit logs currently include events for team management, billing, and security. In the future, logs will indicate events for publishing documentation, creating API keys, and creating monitors.
+
+## Using audit logs
+
+In your [workspace](https://app.getpostman.com/dashboard), click the Settings icon, and select "Audit logs".
+
+[![audit logs menu](https://assets.postman.com/postman-docs/ENT-audit-logs-menu2.png)](https://assets.postman.com/postman-docs/ENT-audit-logs-menu2.png)
+
+In the [Audit Logs](https://app.getpostman.com/dashboard/audit) page, you see information categorized as USER, EVENT NAME, EVENT DESCRIPTION, and DATE.
+
+[![audit logs](https://assets.postman.com/postman-docs/ENT-audit-logs-page.png)](https://assets.postman.com/postman-docs/ENT-audit-logs-page.png)
+
+For more information about audit logs and how to set it up for your Postman team, contact the [support team](https://www.postman.com/get-started-postman-plans).
+
+## Logged Events
+
+The table below lists currently logged events.
+
+| Action name  | Description |
+| ------------- | ------------- |
+| Added Payment Method  | A new credit card was added to the your team.  |
+| Removed Payment method   | A credit card was removed from your team.  |
+| Added Domain   | A custom domain was added to your team. (You can use custom domains to publish documentation.)  |
+| Deleted Domain  | A custom domain was deleted from your team.  |
+| Added Member   | A user joined your team.   |
+| Cancelled Invite   | An invitation for a user was cancelled.   |
+| Custom auth scheme created| A new SSO scheme was added to your team.  |
+| Custom auth scheme disabled  | An SSO scheme was disabled. |
+| Custom auth scheme enabled | An SSO scheme was enabled.  |
+| Custom auth scheme removed  | An SSO scheme was removed.  |
+| Custom auth scheme updated  | An SSO scheme was updated.|
+| Decreased Team Size  | Extra licenses were removed from the team. |
+| Increased Team Size | Additional licenses were added to the team.  |
+| Set Instructions For Next Billing Cycle  | Instructions for the next billing cycle were added.|
+| Team name changed  | Team name was changed.  |
+| Removed Member  | Team member was removed.  |
+| Successfully Retried Invoice  | An invoice for your team was paid.  |
+| Sent Invite  | An invitation was sent to a user to join your team.  |
+| Started  | Your plan has started.  |
+| Updated domain verification  | A domain’s verification status was updated.|
+| Updated User Roles | Roles were updated for some users in your team.  |
+| Team URL changed  | Team’s URL updated. (The custom URL you use to access your team’s dashboard.)  |
+
+### The variables for 'Get Access Token' are not synced
+
+When the settings been created in the **"Get Access Token"** to have variables for "**Access Token URL**", "**Client ID**", and "**Client Secret**" to switch between environments then this works well without having to update the scripts. But when we sync or Export the Scripts and Environments then they don't default to the generic data entry.
+
+![](https://support.getpostman.com/hc/article_attachments/360013550753/mceclip0.png)The reason being, the variables saved while generating auth token works fine only for the collections or requests on the app where the token was generated and it will not be synced as it may contain sensitive data.
+
+So, If you try to access any collection/request which uses the same auth token on any other machine or app, it will not work since this is an expected behavior of the variables created for OAuth2.0.
+
+
+You can make requests that return mock data defined within Postman if you do not have a production API ready, or you do not want to run your requests against real data yet. By adding a mock server to your collection and adding examples to your requests, you can simulate the behavior of a real API. When you send a request to a mock server, Postman will match the request configuration to the examples you have saved for the request and respond with the data you added to the example.
+
+> You need to be signed into a Postman account to create a mock server.
+
+## Mocks quick start
+
+[![Create a mock](https://assets.postman.com/postman-docs/mocks.gif)](https://assets.postman.com/postman-docs/mocks.gif)
+
+To try out a mock server, carry out the following steps:
+
+* Open a new tab in Postman and send a `GET` request to `postman-echo.com/get`.
+* Click **Save** on the request, and create a new collection to save your request to.
+* Click the **Examples** drop-down on the request and choose **Add Example**. Postman will automatically populate the example with the response you received when you sent the request. Click **Save Example** and return to the request.
+* In **Collections** on the left, open the collection (&#9658;) and select **Mocks**. Click **Create a mock server**.
+* Give your mock a name, leave the default version selected and the environment empty. Click **Create Mock Server**.
+* Copy the mock URL and go back into your request. Replace `postman-echo.com` with the mock URL—keeping the `/get` path on the end.
+* Click **Send** to view your example response returned, this time from the mock server. Open the example again and alter the mock response JSON, then save it and send the request again—you will see your edited mock response.
+
+## Contents
+
+* [Creating mock servers](#creating-mock-servers)
+    * [Configuring mock details](#configuring-mock-details)
+* [Making requests to mocks](#making-requests-to-mocks)
+    * [Using HTTP access control](#using-http-access-control-for-a-mock)
+* [Viewing mock calls](#viewing-mock-calls)
+    * [Troubleshooting mock calls](#troubleshooting-mock-calls)
+
+## Creating mock servers
+
+You can create mock servers from an existing collection, or Postman will create a new collection for your mock server. To create a new mock, choose one of the following options:
+
+* In **Collections** on the left of Postman, use the overview &gt; **Mocks** and select **Create a mock server**, or **Mock Collection** in the collection edit (**...**) menu. [![New mock](https://assets.postman.com/postman-docs/new-mock-from-collection.jpg)](https://assets.postman.com/postman-docs/new-mock-from-collection.jpg)
+* Click **New** at the top left of Postman and choose **Mock Server** in **Create New**.
+    * Choose whether you want to create a new collection or mock an existing one. (For a new one you'll need to add at least one request—enter a method, path, status code, and optional response.) [![Mock from New](https://assets.postman.com/postman-docs/mock-from-new.gif)](https://assets.postman.com/postman-docs/mock-from-new.gif)
+* From the Postman Launchpad, click **Create a mock server**.
+* From **History** you can create a mock and Postman will create a collection with the same name:
+    * If you want to start a mock from a single request), click **...** for the request and select **Mock Request**. <br/><img alt="Create new mock server from history request" src="https://assets.postman.com/postman-docs/Mocking+a+single+request+from+history.jpg" width="300px"/>
+    * To mock all requests from a specific date, select **...** next to the date and choose **Mock Requests**.
+* From **APIs** select the API, open the **Develop** tab, and click **Add Mock Server**. ![Create mock from API Dev](https://assets.postman.com/postman-docs/githubusercontent3.png)
+* In **Browse** view, in **Collections** click **...** for the collection you want to mock and choose **Mock Collection**. ![Create new mock server from browse view](https://assets.postman.com/postman-docs/mock-cnx-browse-view.png)
+* In the Postman dashboard, select **Mock Servers** in your workspace and click **Create a mock server in this workspace**. ![Mock servers web dashboard](https://assets.postman.com/postman-docs/mock-web-dashboard.png)
+
+## Configuring mock details
+
+When you create a mock server you will give it a name, choose a version tag (if your collection has a specific version you want to mock), and select an optional environment to use with the requests.
+
+> If you choose to make your mock server private, you will need to add a [Postman API key](/docs/developer/intro-api/) in the request header: `x-api-key:<Your-Postman-API-key>`. You can [share the collection](/docs/collaborating-in-postman/sharing/) and your collaborators can use their Postman API keys to consume the mock.
+
+[![New mock](https://assets.postman.com/postman-docs/create-new-mock-details.jpg)](https://assets.postman.com/postman-docs/create-new-mock-details.jpg)
+
+With your details in place, click **Create Mock Server**.
+
+> If you create your mock via the **New** button, you can also opt to save the mock URL to an [environment variable](/docs/sending-requests/variables/) which you can then reference in your requests.
+
+Postman will display the details you'll need to use the mock (you can also get these from the collection at any time).
+
+[![Mock detail](https://assets.postman.com/postman-docs/mock-server-detail-overview.jpg)](https://assets.postman.com/postman-docs/mock-server-detail-overview.jpg)
+
+Click **Copy Mock URL** before you close the modal so that you can begin making requests to your mock straight away.
+
+You will see details of the mock in the collection overview &gt; **Mocks**.
+
+[![Mock in collection](https://assets.postman.com/postman-docs/new-mock-in-collection.jpg)](https://assets.postman.com/postman-docs/new-mock-in-collection.jpg)
+
+Hover over the mock to copy the URL, edit, or delete.
+
+> You can also edit and delete mocks from **Browse** mode and from the **Dashboard**.
+
+[![Edit mock in browse](https://assets.postman.com/postman-docs/edit-mocks-browse-mode.jpg)](https://assets.postman.com/postman-docs/edit-mocks-browse-mode.jpg)
+
+[![Edit mock in dashboard](https://assets.postman.com/postman-docs/edit-mocks-dash.jpg)](https://assets.postman.com/postman-docs/edit-mocks-dash.jpg)
+
+## Making requests to mocks
+
+With your mock URL, you can start making requests right away. Make sure the request you want to mock has at least one [example](/docs/sending-requests/examples/) added to it. Open a tab (or edit the address in an existing tab) and add the mock URL:
+
+```
+https://<mock-id>.mock.pstmn.io/<request-path>
+```
+
+For example:
+
+```
+https://3589dfde-f398-45cd-88eb-b0fa0192fc3f.mock.pstmn.io/matches
+```
+
+The mock URL includes the ID for the mock and the path for the request with a saved example.
+
+If you save your mock URL to a variable, you can reference it across requests—for example if you have a production server and a mock server, you could have an [environment](/docs/sending-requests/managing-environments/) for each one with the same variable name in each for the mock URL. With your requests using the variable, you can then switch between the two environments.
+
+> You can also retrieve your mock ID from the [Postman API](https://documenter.getpostman.com/view/631643/JsLs/?version=latest#018b5d62-f6fc-f752-597e-c1eb4bb98d24)
+
+When you **Send** a request to your mock server URL it will send back one of the examples you added to the request with the same path and method. ([You can provide multiple examples](/docs/designing-and-developing-your-api/mocking-data/mocking-with-examples/) and Postman will return the one that matches your request configuration most closely).
+
+> Your Postman account gives you a limited number of free mock server calls per month. Check your [usage limits](https://go.postman.co/usage).
+
+### Using HTTP access control for a mock
+
+In addition to using the Postman app to make requests to mock endpoints, you can also make those requests in a browser.
+
+A web browser makes a cross-origin HTTP request when it requests a resource from a domain, protocol, or port that's different from its own. [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) is a standard that defines a way in which a browser and server can interact securely, in this case referring to how a web browser interacts with the mock endpoints hosted on the Postman server.
+
+CORS is enabled for Postman mock servers. As a result, you can stub your web apps with mocked data using the mock endpoints. Development or production web apps can then make requests to your Postman mock endpoint and receive example responses.
+
+## Viewing mock calls
+
+You can view and search the details of calls to your mock servers using the mock call log. Open a mock from the Postman app by clicking it in __Collections__, in __APIs__, or by switching to __Browse__ &gt; __Mocks__ and clicking the mock name. Your mock call log will open in the web dashboard—you can also open it from the collection in the browser, by selecting __Mock Servers__.
+
+![Mock List Browse View](https://assets.postman.com/postman-docs/mock-list-browse.jpg)
+
+The mock call log lists an overview of calls made to the mock url, together with request and response details.
+
+![Mock Call Log List](https://assets.postman.com/postman-docs/mock-call-log-list.jpg)
+
+Mock call log entries indicate the time a request was sent, the request method and path, and a response overview. Click an entry to see more detail on request headers and body, or response headers and body. You can drill down into response data returned by a mock call.
+
+![Mock Call Log](https://assets.postman.com/postman-docs/mock-call-log.jpg)
+
+Use the search field to find particular calls, and the refresh button at the top of the list to view up to date requests.
+
+### Troubleshooting mock calls
+
+You can use the mock call log to troubleshoot your requests to mock servers.
+
+<img alt="Mock Call Error" src="https://assets.postman.com/postman-docs/no-matching-requests.jpg" width="300px"/>
+
+If you see `No matching requests` listed in the __Response__ column, this may mean that your mock server is not setup correctly. Make sure [you have an example saved for the request](/docs/designing-and-developing-your-api/mocking-data/mocking-with-examples/) in the collection you have the mock connected to.
+
+In the case of a service outage, you will get a 502/503/504 response. Please subscribe and check the Postman [status page](https://status.postman.com/) for updates if you encounter this.
+
+## Next steps
+
+For more information about mock servers, see the following resources:
+
+* [Mocking with examples](/docs/designing-and-developing-your-api/mocking-data/mocking-with-examples/)
+* [Mocking with the Postman API](/docs/designing-and-developing-your-api/mocking-data/mock-with-api/)
+* [Matching algorithm](/docs/designing-and-developing-your-api/mocking-data/matching-algorithm/)
+
+### Requests to my mock servers aren't returning the expected response
+
+There are a few quick things you can check if your mock server isn't giving the intended response:
+
+**Error1** (unable to find a matching request):
+
+```
+{
+        "error": {
+        "name": "mockRequestNotFoundError",
+        "message": "We were unable to find any matching requests for this method type         <br>and the mock path, '/post', in your collection"
+        }
+}
+```
+
+There are two fields the system looks at while trying to find a matching response to return: the HTTP method and the request path
+
+1. **Incorrect HTTP Method**: If the request in the saved example uses POST, you'll need to use POST while making requests to the mock server. The method needs to match with the saved example for the response to be returned.
+
+2. **Incorrect Path URL**: The path is the segment of the URL after the host. For [http://api.service.com/users](http://api.service.com/users), "/users" is the path. While requesting saved response from a mock server, you'll need to send "/users" to the mock server too:
+
+https://&lt;mock id&gt;.mock.pstmn.io/users
+
+For more details on this, check our documentation at [https://www.getpostman.com/docs/v6/postman/mock_servers/matching_algorithm](https://www.getpostman.com/docs/v6/postman/mock_servers/matching_algorithm)
+
+**Error2:** (invalid Credentials Error)
+
+```
+{
+        "error": {
+        "name": "invalidCredentialsError",
+        "message": "Please provide the required `x-api-key` authentication header."
+        }
+
+
+The above error tells you that you mock is a private mock &amp; requires a Postman API key to be passed in the header.
+
+Postman keeps a tab on your activities inside the app and captures log messages automatically to help you debug unresolved issues just in case something goes wrong in the app. You can easily access the stored messages with a few mouse clicks. To access the log messages in macOS, point your cursor to *View* menu, navigate to *Developer* and then select *View Logs in Finder*, as illustrated below:  
+
+[![view logs](https://assets.postman.com/postman-docs/View_Logs.png)](https://assets.postman.com/postman-docs/View_Logs.png)
+
+The logs folder and its contents appear as shown below:
+
+[![view logs2](https://assets.postman.com/postman-docs/View_Logs2.png)](https://assets.postman.com/postman-docs/View_Logs2.png)
+
+To access in Linux OS, point your cursor to *View* menu, navigate to *Developer* and then select *View Logs in File Manager*
+
+To access in Windows, point your cursor to *View* menu, navigate to *Developer* and then select *View Logs in File Explorer*
+
+These logs provide you basic information about your activities in the app flow. You can send these log messages to Postman Customer Support to troubleshoot issues when encountered.
+
+### How do I recover my data?
+
+Summary of Issue
+==============
+
+**One of the following may have brought you here**:
+- I opened the Postman native app and it looks empty - it looks like all my collections disappeared.
+- Data in the Postman native app, including Collections, environments, and globals, has been lost unexpectedly upon opening the app.
+
+**Why is this happening?**
+- This can happen because of the app's local database getting corrupted or when signing out of the app (which clears all local data).
+Resolution steps
+--------------------------------
+**Check for synced data**
+
+If you were previously logged in to the app with your Postman account and had sync enabled, your data should be backed up to our servers. Signing out of the Postman app, and logging back in again, should restore your work.
+
+To check what is synced to your Postman account, navigate to the link below.
+- [https://go.postman.co/me](https://go.postman.co/me)
+
+**Attempt to recover local data**
+If your work is not backed up to a Postman account, you can attempt to recover data from the app's local storage using the steps below.
+
+**Please note:** this process will delete any local data for Postman Canary.
+
+If you're using our Chrome app, please follow [the instructions in this article](https://support.getpostman.com/hc/en-us/articles/203837571-I-lost-all-my-data-when-I-opened-Postman) instead
+
+1. Download and install [Postman Canary](https://www.postman.com/downloads/canary)
+_If you already have Postman Canary installed, make sure to sign-out of the app and quit it before proceeding._
+
+2. Make a copy of the folder: **file__0.indexeddb.leveldb** in your Postman directory, and paste it into the IndexedDB folder in your PostmanCanary.
+
+**Windows**
+~~~~~~~~~~~~
+**Copy**: %appdata%\Postman\IndexedDB​\file__0.indexeddb.leveldb
+**Paste to**: %appdata%\PostmanCanary\IndexedDB​\
+~~~~~~~~~~~~
+
+3. Open Postman Canary, and bulk export your data from within the app. Save the resulting .json file to your local machine. To learn more, please refer to [Data Dumps](https://learning.postman.com/docs/postman/collections/data_formats/#data-dumps)
+
+4. Open the stable Postman app (not Canary), and switch to a workspace where any recovered content will be added, and import the .json file you saved in step 3. To learn more, please refer to [Importing Data](https://learning.postman.com/docs/postman/collections/data_formats/#importing-postman-data)
+
+5. If any content is recovered, it will be added to your workspace after the import. If no data is recovered, you may only see a few empty default environments
+
+If you need further assistance, please open a ticket with our Support Team: [https://www.postman.com/support] (https://www.postman.com/support)
+
+### Postman Chrome app won't start
+
+If you're using the Postman Chrome app:
+
+1. We strongly suggest you move to the native apps ([https://www.getpostman.com/apps](https://www.getpostman.com/apps)) due to the deprecation of our official chrome extension for (OSX / Windows / Linux) and the native apps support a lot more features.
+2. Before reinstalling, head to [chrome://indexeddb-internals/](chrome://indexeddb-internals/) and search for ""fhbjgbiflinjbdggehcddcbncdddomop"". There will be two folders listed - backup the contents of these folders.
+3. Reinstall (navigate to this [link](https://www.getpostman.com/apps) and reinstall the latest version) and move the backup to its original location.
+
+
+
+### Postman window is blank
+
+**Issue**
+---------
+
+For Windows computers with certain GPUs, Postman may display a **blank/black window** when opened, and elements in the app may not be rendering correctly or at all.
+
+![Screen_Shot_2019-07-08_at_4.36.22_PM.png](https://support.getpostman.com/hc/article_attachments/360040688194/Screen_Shot_2019-07-08_at_4.36.22_PM.png)
+
+This issue may be related to a known issue where Postman doesn’t launch with certain GPUs. A workaround for this issue involves [disabling your GPU](https://github.com/postmanlabs/postman-app-support/issues/4594#issuecomment-391601621). Disabling GPU rendering for Postman generally allows the app to run successfully. To do so, you'll need to add a Windows environment variable: `POSTMAN_DISABLE_GPU`, with the value: `true`
+
+**Instructions:**
+
+1\. Open:  `Advanced system settings`
+
+[![step 1](https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/Troubleshootwindows6.1.png)](https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/Troubleshootwindows6.1.png)
+
+2\. Navigate to:  `Environment Variables`
+
+[![step 2](https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/Troubleshootwindows6.12.png)](https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/Troubleshootwindows6.12.png)
+
+3\. Add a new system variable with the name: `POSTMAN_DISABLE_GPU`, and the value: `true`.
+
+[![step 3](https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/Troubleshootwindows6.1+(1).png)](https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/Troubleshootwindows6.1+(1).png)
+
+4\. Click OK to save
+
+If the issue persists and you see any error logs while the app launches, please send us those logs to investigate further at [help@getpostman.com](mailto:help@getpostman.com)
+
+### How do I recover my data from the Postman Chrome app?
+
+This can happen because of the local database getting corrupted.
+
+If you had sync enabled, sign out, and sign back into the Postman app to recover your data. You can head to https://go.postman.co/me/collections to ensure all your data has been synced correctly.
+
+If not, and you use the Chrome app, head to chrome://indexeddb-internals/ and search for "fhbjgbiflinjbdggehcddcbncdddomop". You should see two folders listed - you can create a zip file with the contents of those folders, and email them to help@postman.com. We should be able to recover your data.
+
+We strongly recommend moving to our native apps (available from https://www.postman.com/apps) and signing in to avail Sync features.
+
+### I'm not able to access documentation via my configured custom domain
+
+Postman Public Documentation published on a custom domain may not work due to the following reasons:
+
+1. Domain verification not done.
+2. Certificates from [LetsEncrypt](https://letsencrypt.org/) not generated on your domain.
+
+**1. Domain Verification** - Once a custom domain is added on your Postman account, it is important to complete the domain verification by creating the following DNS records:
+**TXT record** - You need to configure on the root domain (eg: example.com)
+
+**CNAME record** - need to be configured on the subdomain (eg: api.example.com or docs.example.com)
+
+Please refer to the following [article](https://www.getpostman.com/docs/v6/postman/api_documentation/adding_and_verifying_custom_domains) for more information.
+
+**2. Certificates from [LetsEncrypt](https://letsencrypt.org/) not generated on your domain:**
+
+Postman should have the authority to serve traffic on your domain. [LetsEncrypt](https://letsencrypt.org/) lets us serve traffic by issuing us a certificate on your domain.
+
+If your domain has CAA records set, you must explicitly allow LetsEncrypt to set certificates for your domain. Without this, certificates generated by LetsEncrypt won't be respected by browsers. To tackle this, follow this guide - [https://letsencrypt.org/docs/caa/](https://letsencrypt.org/docs/caa/) to add Letsencrypt to your CAA records.
+
+### I'm not able to access documentation via my configured custom domain
+
+Postman Public Documentation published on a custom domain may not work due to the following reasons:
+
+1. Domain verification not done.
+2. Certificates from [LetsEncrypt](https://letsencrypt.org/) not generated on your domain.
+
+**1. Domain Verification** - Once a custom domain is added on your Postman account, it is important to complete the domain verification by creating the following DNS records:
+**TXT record** - You need to configure on the root domain (eg: example.com)
+
+**CNAME record** - need to be configured on the subdomain (eg: api.example.com or docs.example.com)
+
+Please refer to the following [article](https://www.getpostman.com/docs/v6/postman/api_documentation/adding_and_verifying_custom_domains) for more information.
+
+**2. Certificates from [LetsEncrypt](https://letsencrypt.org/) not generated on your domain:**
+
+Postman should have the authority to serve traffic on your domain. [LetsEncrypt](https://letsencrypt.org/) lets us serve traffic by issuing us a certificate on your domain.
+
+If your domain has CAA records set, you must explicitly allow LetsEncrypt to set certificates for your domain. Without this, certificates generated by LetsEncrypt won't be respected by browsers. To tackle this, follow this guide - [https://letsencrypt.org/docs/caa/](https://letsencrypt.org/docs/caa/) to add Letsencrypt to your CAA records.
+
+### Why my published collection returns an error 403?
+
+Your documentation may result in the below error 403 if the environment associated with the collection was created by a user who left the team.
+
+![64537839-dd300400-d31b-11e9-8f4e-45a5156ba8cd.png](https://support.getpostman.com/hc/article_attachments/360049806254/64537839-dd300400-d31b-11e9-8f4e-45a5156ba8cd.png)
+
+A quick way to verify that the error is caused by the unresolved environment is to **republish the collection without selecting any environment**.
+
+To do so, head to your [Postman dashboard](http://app.getpostman.com/), select your collection and click on it. Then, click on ![Screen_Shot_2019-11-05_at_19.04.24.png](https://support.getpostman.com/hc/article_attachments/360050692893/Screen_Shot_2019-11-05_at_19.04.24.png)and select  _No Environment_  
+![Screen_Shot_2019-11-05_at_19.06.29.png](https://support.getpostman.com/hc/article_attachments/360049809914/Screen_Shot_2019-11-05_at_19.06.29.png)
+
+If your documentation is rendering fine without the Environment variable, let's go ahead and restore the environment. All you need to do is to **duplicate the environment**.
+
+1\. Go to the Postman app and go to **Manage Environments**
+
+![Screen_Shot_2019-11-05_at_18.54.31.png](https://support.getpostman.com/hc/article_attachments/360049808134/Screen_Shot_2019-11-05_at_18.54.31.png)
+
+2\. In the **Manage Environments** window, hit ![Screen_Shot_2019-11-05_at_19.12.27.png](https://support.getpostman.com/hc/article_attachments/360050694313/Screen_Shot_2019-11-05_at_19.12.27.png) next to the environment you want to restore.  
+3\. Edit the Published documentation.  
+4\. Select the new, duplicated environment.  
+5\. Republish the collection  
