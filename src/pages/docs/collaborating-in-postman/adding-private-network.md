@@ -65,6 +65,14 @@ The API will immediately be visible in your team's [private API network](https:/
 
 ![Listed APIs](https://assets.postman.com/postman-docs/privNetworkEditListing.png)
 
+You can create new folders from the private API list view. Click the __Add New__ button and select __Folder__ to create a new folder.
+
+![Private Network](https://assets.postman.com/postman-docs/private-network.jpg)
+
+Click the __APIs__ to add APIs to the Team API's Network. You can choose the workspace and then select the APIs to add to the workspace. Click __Next__.
+
+You will be able to search across folders, subfolders, and APIs in the private API network
+
 You can also add an API to your team's private API network from the Postman app. Go to the [API Builder](/docs/postman/design-and-develop-apis/the-api-workflow/) via **APIs** in the left sidebar. Select an API, and see a high-level description on the first tab **Overview**. You can add and edit your network listing next to the version details on the right.
 
 ![Add from app](https://assets.postman.com/postman-docs/privNetworkInAppAdd.png)
