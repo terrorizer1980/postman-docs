@@ -84,15 +84,9 @@ You can create new folders from the private API list view. Click the __Add New__
 
 ![Private Network](https://assets.postman.com/postman-docs/private-network.jpg)
 
-Once you've created the folder, click the __APIs__ to add APIs to the Team API's Network. You can choose the workspace and then select the APIs you want to add to the workspace. Click __Next__.
+Once you've created the folder, click the __APIs__ to add APIs to the Team API's Network. You can choose the workspace and then select the APIs you want to add to the folder. Click __Add__.
 
 ![Add APIs Workspace](https://assets.postman.com/postman-docs/add-apis-workspace.jpg)
-
-The sidebar navigation displays the folder structure for private API network.
-
-![Sidebar Navigation](https://assets.postman.com/postman-docs/sidenav-api.jpg)
-
-You will be able to search across folders, subfolders, and APIs in the private API network using the search bar.
 
 To edit the API setting, click `...` button and select __Edit network listing__.
 
@@ -105,6 +99,10 @@ You can change the versions, update the API summary and even modify the folder t
 You can also remove the added APIs from Postman's API Network. Click the `...` button on the right of the API you want to remove and select __Remove from network__. Once you click __Remove API__, your team members will also lose access to the API via the network.
 
 ![Remove API fom Network](https://assets.postman.com/postman-docs/remove-from-network.jpg)
+
+The sidebar navigation displays the folder structure for private API network.
+
+![Sidebar Navigation](https://assets.postman.com/postman-docs/sidenav-api.jpg)
 
 ## Discovering and consuming private APIs
 
