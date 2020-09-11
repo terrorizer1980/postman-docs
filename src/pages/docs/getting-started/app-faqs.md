@@ -700,3 +700,40 @@ When the settings been created in the **"Get Access Token"** to have variables f
 ![](https://support.getpostman.com/hc/article_attachments/360013550753/mceclip0.png)The reason being, the variables saved while generating auth token works fine only for the collections or requests on the app where the token was generated and it will not be synced as it may contain sensitive data.
 
 So, If you try to access any collection/request which uses the same auth token on any other machine or app, it will not work since this is an expected behavior of the variables created for OAuth2.0.
+
+### Requests to my mock servers aren't returning the expected response
+
+There are a few quick things you can check if your mock server isn't giving the intended response:
+
+**Error1** (unable to find a matching request):
+
+```
+{
+        "error": {
+        "name": "mockRequestNotFoundError",
+        "message": "We were unable to find any matching requests for this method type         <br>and the mock path, '/post', in your collection"
+        }
+}
+```
+
+There are two fields the system looks at while trying to find a matching response to return: the HTTP method and the request path
+
+1. **Incorrect HTTP Method**: If the request in the saved example uses POST, you'll need to use POST while making requests to the mock server. The method needs to match with the saved example for the response to be returned.
+
+2. **Incorrect Path URL**: The path is the segment of the URL after the host. For [http://api.service.com/users](http://api.service.com/users), "/users" is the path. While requesting saved response from a mock server, you'll need to send "/users" to the mock server too:
+
+https://&lt;mock id&gt;.mock.pstmn.io/users
+
+For more details on this, check our documentation at [https://www.getpostman.com/docs/v6/postman/mock_servers/matching_algorithm](https://www.getpostman.com/docs/v6/postman/mock_servers/matching_algorithm)
+
+**Error2:** (invalid Credentials Error)
+
+```
+{
+        "error": {
+        "name": "invalidCredentialsError",
+        "message": "Please provide the required `x-api-key` authentication header."
+        }
+
+
+The above error tells you that you mock is a private mock &amp; requires a Postman API key to be passed in the header.
