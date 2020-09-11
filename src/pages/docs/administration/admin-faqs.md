@@ -15,9 +15,6 @@ contextual_links:
 
 ---
 
-<!-- ### question -->
-
-<!-- answer -->
 ### Can I get a quote?
 
 Reach out to us at [sales@postman.com](sales@postman.com) with your team size and desired plan to receive a quote.

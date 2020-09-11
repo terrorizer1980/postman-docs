@@ -12,10 +12,6 @@ contextual_links:
 
 ---
 
-<!-- ### question -->
-
-<!-- answer -->
-
 ### My session expired - can't reset my password and can't access to old email
 
 If you're logged out due to a session revocation and cannot log back into your account because
