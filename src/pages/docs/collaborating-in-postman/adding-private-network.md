@@ -80,11 +80,11 @@ To submit an API to the network, you must have edit access to the API. You canno
 
 ### Folders in Private API Network
 
-You can create new folders from the private API list view. Click the __Add New__ button and select __Folder__ to create a new folder.
+You can create new folders from the private API network view. Click the __Add New__ button and select __Folder__ to create a new folder.
 
 ![Private Network](https://assets.postman.com/postman-docs/private-network.jpg)
 
-Once you've created the folder, click the __APIs__ to add APIs to the Team API's Network. You can choose the workspace and then select the APIs you want to add to the folder. Click __Add__.
+Once you've created the folder, click the __Add New__ button and select __APIs__ to add APIs to the Team API's Network. You can choose the workspace and then select as many APIs you want to add to the network at one time. For each API selected, specify the version(s) to add. Click __Add__.
 
 ![Add APIs Workspace](https://assets.postman.com/postman-docs/add-apis-workspace.jpg)
 
@@ -96,13 +96,15 @@ You can change the versions, update the API summary and even modify the folder t
 
 ![Edit Summary 2](https://assets.postman.com/postman-docs/edit-api-summary-2.jpg)
 
-You can also remove the added APIs from Postman's API Network. Click the `...` button on the right of the API you want to remove and select __Remove from network__. Once you click __Remove API__, your team members will also lose access to the API via the network.
+You can also remove the added APIs from Postman's API Network. Click the `...` button on the right of the particular API you want to remove and select __Remove from network__. Once you click __Remove API__, your team members will also lose access to the API via the network.
 
 ![Remove API fom Network](https://assets.postman.com/postman-docs/remove-from-network.jpg)
 
 The sidebar navigation displays the folder structure for private API network.
 
 ![Sidebar Navigation](https://assets.postman.com/postman-docs/sidenav-api.jpg)
+
+The search box allows you to search across folders, subfolders, and APIs in the private API network. You can also filter the folders, subfolders, and APIs based on name, recently added and so on.
 
 ## Discovering and consuming private APIs
 
