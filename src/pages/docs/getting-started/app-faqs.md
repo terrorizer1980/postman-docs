@@ -36,7 +36,7 @@ Instructions:
 2. Press **command** + **space** to open _Spotlight Search_
 3. Paste the address you copied (**command** + **v**), and press return.
 
-**Windows**
+## Windows
 
 `%AppData%\Postman\logs`
 
@@ -46,19 +46,19 @@ Instructions:
 2. Open the _Start Menu_ and search for _explorer.exe_, then press **return**.
 3. Paste the address you copied (**control** + **v**), and press return
 
-**Linux**
+## Linux
 
 `~/.config/Postman/logs`
 
 Instructions:
 
-*See documentation for your Linux distribution*
+## See documentation for your Linux distribution
 
-#### From within the Postman app
+### From within the Postman app
 
 From the Postman app, you can access [DevTools](https://developers.google.com/web/tools/chrome-devtools/), or open the logs folder in Postman's installation directory.
 
-##### DevTools
+#### DevTools
 
 With the Postman app window open, click following in the menu bar to open _DevTools_ for the current app view, or shared:
 
@@ -147,6 +147,7 @@ _If you already have Postman Canary installed, make sure to sign-out of the app 
 2. Make a copy of the folder: **file__0.indexeddb.leveldb** in your Postman directory, and paste it into the IndexedDB folder in your PostmanCanary.
 
 ## Windows
+
 ~~~~~~~~~~~~
 
 **Copy**: %appdata%\Postman\IndexedDB​\file__0.indexeddb.leveldb
@@ -155,6 +156,7 @@ _If you already have Postman Canary installed, make sure to sign-out of the app 
 ~~~~~~~~~~~~
 
 ## MacOS
+
 ~~~~~~~~~~~
 
 **Copy**: ~/Library/Application Support/Postman/IndexedDB/file__0.indexeddb.leveldb
@@ -162,6 +164,7 @@ _If you already have Postman Canary installed, make sure to sign-out of the app 
 ~~~~~~~~~~~
 
 ## Linux
+
 ~~~~~~~~~~~
 
 **Copy**: ~/.config/Postman/IndexedDB/file__0.indexeddb.leveldb
@@ -187,7 +190,7 @@ If you're using the Postman Chrome app:
 
 ### Postman window is blank
 
-**Issue**
+## Issue
 
 For Windows computers with certain GPUs, Postman may display a **blank/black window** when opened, and elements in the app may not be rendering correctly or at all.
 
@@ -239,6 +242,7 @@ https://&lt;mock id&gt;.mock.pstmn.io/users
 For more details on this, check our documentation at [https://www.getpostman.com/docs/v6/postman/mock_servers/matching_algorithm](https://www.getpostman.com/docs/v6/postman/mock_servers/matching_algorithm)
 
 **Error2:**
+
 ```
     {
         "error": {
