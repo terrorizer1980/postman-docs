@@ -202,15 +202,15 @@ This issue may be related to a known issue where Postman doesn’t launch with c
 
 1\. Open:  `Advanced system settings`
 
-[![step 1](https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/Troubleshootwindows6.1.png)](https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/Troubleshootwindows6.1.png)
+[![step 1](https://assets.postman.com/postman-docs/postman-docs/Troubleshootwindows6.1.png)](https://assets.postman.com/postman-docs/postman-docs/Troubleshootwindows6.1.png)
 
 2\. Navigate to:  `Environment Variables`
 
-[![step 2](https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/Troubleshootwindows6.12.png)](https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/Troubleshootwindows6.12.png)
+[![step 2](https://assets.postman.com/postman-docs/postman-docs/Troubleshootwindows6.12.png)](https://assets.postman.com/postman-docs/postman-docs/Troubleshootwindows6.12.png)
 
 3\. Add a new system variable with the name: `POSTMAN_DISABLE_GPU`, and the value: `true`.
 
-[![step 3](https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/Troubleshootwindows6.1+(1).png)](https://s3.amazonaws.com/postman-static-getpostman-com/postman-docs/Troubleshootwindows6.1+(1).png)
+[![step 3](https://assets.postman.com/postman-docs/postman-docs/Troubleshootwindows6.1+(1).png)](https://assets.postman.com/postman-docs/postman-docs/Troubleshootwindows6.1+(1).png)
 
 4\. Click OK to save
 
