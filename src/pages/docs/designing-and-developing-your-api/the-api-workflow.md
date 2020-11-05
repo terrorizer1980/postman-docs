@@ -34,6 +34,7 @@ You can connect various components of your API development and testing process t
     * [Editing your schema](#editing-your-schema)
     * [Generating a collection](#generating-a-collection)
 * [Watching an API](#watching-an-api)
+* [Watching a Collection](#watching-a-collection)
 * [Developing an API](#developing-an-api)
     * [Adding a mock server](#adding-a-mock-server)
     * [Adding documentation](#adding-documentation)
@@ -131,6 +132,24 @@ Click the __View Schema__ button to view the API in the web dashboard.
 ![View Schema](https://assets.postman.com/postman-docs/watch-api-view-schema.jpg)
 
 > If you created the API and modified the schema from the same account, you will not receive email or in-app notifications for changes made.
+
+## Watching a Collection
+
+The watch option allows you to receive an email/in-app notification when your team member belonging to the same workspace modifies the collection for example adding a new request, renaming the collection, modifying the existing requests and so on.
+
+Once you've created the collection, click the __watch__ option to start watching the collection.
+
+After enabling the watch option, you will get a pop-up notification stating "__You are watching this Collection__."
+
+Being a watcher, you will be notified whenever the collection is modified. If you're watching a collection in your current team workspace, you will see notifications whenever changes are made to the collection in Postman even if you are logged into a different account.
+
+Click the bell icon on the top right corner to view the notification. The popup will indicate further information about the updated collection.
+
+In addition to this, you will receive an email with the information regarding who has made the change, what the change was, and when it was made.
+
+Click the __View__ button to view the collection in the web dashboard.
+
+> If you created the collection and modified it from the same account, you will not receive email or in-app notifications for changes made.
 
 ## Developing an API
 
